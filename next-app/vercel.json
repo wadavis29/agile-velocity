@@ -10,6 +10,42 @@
       ],
       "destination": "https://www.agilevelocity.com/:path*",
       "permanent": true
+    },
+    {
+      "source": "/insights/",
+      "has": [
+        {
+          "type": "query",
+          "key": "post_types",
+          "value": "case_study"
+        }
+      ],
+      "destination": "/insights/case-studies",
+      "permanent": true
+    },
+    {
+      "source": "/insights/",
+      "has": [
+        {
+          "type": "query",
+          "key": "_sft_category",
+          "value": "webinar"
+        }
+      ],
+      "destination": "/insights/webinars",
+      "permanent": true
+    },
+    {
+      "source": "/insights/",
+      "has": [
+        {
+          "type": "query",
+          "key": "post_types",
+          "value": "white_paper"
+        }
+      ],
+      "destination": "/insights/white-papers",
+      "permanent": true
     }
   ]
 }

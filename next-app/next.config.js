@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+const redirects = require('./redirects');
+
 const nextConfig = {
   // Enable compression for better performance
   compress: true,
@@ -66,6 +68,11 @@ const nextConfig = {
         ],
       },
     ]
+  },
+
+  // 301 Redirects for site migration
+  async redirects() {
+    return redirects;
   },
 }
 

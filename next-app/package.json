@@ -11,7 +11,9 @@
     "lint": "next lint",
     "optimize-images": "node scripts/optimize-images.js",
     "optimize-images:watch": "node scripts/optimize-images.js --watch",
-    "optimize-images:force": "node scripts/optimize-images.js --force"
+    "optimize-images:force": "node scripts/optimize-images.js --force",
+    "test:redirects": "node scripts/test-redirects.js",
+    "test:redirects:prod": "node scripts/test-redirects.js https://www.agilevelocity.com"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
