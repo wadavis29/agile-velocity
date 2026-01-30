@@ -1,0 +1,58 @@
+---
+title: 'Legacy Applications: Lessons in Coupling'
+slug: legacy-applications-lessons-coupling
+date: '2015-02-09'
+author: Agile Velocity
+excerpt: >-
+  I struggled with a number of potential topics for this blog before settling on
+  this one. I understand this isn't a flashy topic like a comparison of
+  JavaScript MVC frameworks or centralized logging solutions; however, I've been
+  working on-and-off with legacy applications throughout my career and hav
+categories:
+  - Technical Excellence & Engineering
+featuredImage: '/images/blog/ladybugs-1593406_1280.jpg'
+---
+
+![Ladybugs clustered together representing tightly coupled systems](/images/blog/ladybugs-1593406_1280.jpg)
+
+I struggled with a number of potential topics for this blog before settling on this one. I understand this isn't a flashy topic like a comparison of JavaScript MVC frameworks or centralized logging solutions; however, I've been working on-and-off with legacy applications throughout my career and have come to truly realize the constrictive nature of coupling logic. Avoiding coupled applications can save your sanity and possibly your business as well. In this post, I will discuss coupling in software applications, strategies for avoiding it and a plan to refactor a legacy application into a decoupled one to help your organization get more value from its product.
+
+## Coupling - What is it?
+
+When software contains knowledge of the inner workings of other layers or modules, it is considered to be coupled. As an example, let's take a hypothetical student registration system created for web users. Fundamentally, "the system" is comprised of registration (business) logic, student data, and a user interface - in this scenario, web pages. Coupling occurs when core application logic appears in one of the other tiers or the core application becomes aware of the specifics of the external modules. Using our example as a reference, if the core logic was programmed for web page presentation or worse, application logic seeped into the presentation tier, then it would be considered coupled. In this case, it would be coupled to a web-based scheme.
+
+A lot of readers will recognize our strategy for the student registration system as an MVC (Model-View-Controller) architecture. This is probably the most pervasive strategy leveraged by software organizations building web-based solutions over the last 15 years. You may not necessarily hear MVC being touted as frequently these days, but it feels just as relevant (and possibly more poignant) now than it was years ago. One of the main goals of the MVC pattern is to prevent coupling typically in a 3-tier architecture. If implemented as designed, then interchanging the endpoints or tiers is not only possible but should require minimal effort. With a decoupled design, a new requirement to support native mobile apps or to switch from a traditional RDBMS to a NoSQL data store should be doable without rewriting the core application logic. The MVC design strategy isolates and identifies the responsibilities of each tier but doesn't discuss how communication should be handled between the tiers to avoid coupling. This brings me to another design approach that emphasizes a decoupled solution - Hexagonal Architecture.
+
+## Decoupling Strategies - Designing for Decoupled Solutions
+
+Alistair Cockburn wrote an article on Hexagonal Architecture in which he explains the motivation for decoupled solutions. The design is known by two common names (and possibly others as well). The first name, Hexagonal Architecture (see diagram on the right), comes from the fact that the figure used to describe the architecture is comprised of two hexagons, an inner one representing the application (logic) and an outer one representing the boundary between it and other systems. Alistair said he used hexagons not because the number 6 (hexagons have 6 sides) is important, but to provide room for illustrating multiple ports and adapters.
+
+This brings us to the second common name which is the Ports & Adapters Strategy. Going back to the two hexagons representing the architecture, the inner hexagon contains the application logic and represents the boundary for ports (connections to it). The area between the inner hexagon and the outer one represents adapters which manage communication between external devices/systems and the ports.
+
+Now that we understand the origin of the name, let's focus on the strategy itself. As emphasized by the MVC strategy, a fundamental principle is to avoid coupling and keep the application logic from leaking into other tiers. A Hexagonal Architecture surrounds the application with ports that allow interaction with it. These ports can be thought of as APIs. The term port is used to evoke thoughts of a standard port on a network. If I have an application that supports the FTP protocol, I should be able to connect to servers/networks that expose FTP, typically on port 21. The thought here is the same. From our application, we don't need to know what is communicating with a port, and it can communicate as long as it conforms to the interface (API). The adapters are the layer between ports and other devices/systems. They are responsible for managing and translating the communication between the ports and other systems. Using this strategy, the level of effort to allow the application to interact with other systems is directly related to the creation of the adapter.
+
+This was a very brief overview of the architectural approach and more can be read by using the links in the References section; however, my goal was to introduce the strategy and bring an emphasis to decoupled architectures. Leveraging these strategies, separate the core application/domain logic from the delivery mechanisms such as web, mobile, data store, etc. It decouples and separates each of those concerns so they can be tested independently and adapted over time as needs change without disruption to the rest of the system.
+
+## Decoupling Legacy Applications
+
+This sounds great, right? I'm sure anyone reading this and working on a legacy application that suffers from coupling is thinking it's impossible to get here without rewriting the application entirely. Depending on the size of the application, that may be the case; however, using an agile approach, it can be accomplished iteratively. All is not lost but it will take discipline and buy-in from not only the team but possibly the organization. First, there has to be a business need. What value can be gained by transitioning to a decoupled solution? Obviously there are numerous technical reasons, but the business must benefit to provide justification. For instance, quality has been an issue and it is difficult and time-consuming to write/maintain tests for the application due to coupling (logic cannot fully be tested without the UI because logic exists there as well). Or, the business is losing opportunities in the mobile space because the application only works properly when rendered in a web browser.
+
+Once the business justification has been adequately identified and the team is in agreement, the strategy should be identified and communicated. Most likely this will require significant refactoring so you'll need to know how the application functions before you start and be able to verify functionality after refactoring. Do this through automated testing. If unit and integration tests do not already exist, then be sure to include this as part of the effort. Another point to keep in mind is functional and non-functional testing. It is important that the functionality of the system logic is verified before, during and after changes, but it is also important to monitor the non-functional behavior as well. For instance, if performance and security are important to your application, having automated approaches to monitor these during the refactoring process (and beyond) is a good idea. It's important to know quickly when a change has been made that negatively impacts one of the thresholds critical to your application and business.
+
+With the safety net of automated tests in place, use small, targeted iterations to progressively work through the changes. You will learn more and more as you proceed and it may take a few iterations to determine the right approach. Once again, with the business justification validated upfront, it is understood that this will take time, needs to be done right and not rushed. I believe the single biggest threat to decoupled systems is artificial deadlines and upper management pressure.
+
+## Final Points
+
+Finally, I have obviously only skimmed the surface here and could go on a few more pages on this topic. (I'm lucky if you have stuck with me this long.) It requires discipline to avoid coupled solutions. The benefits far outweigh the individual effort to keep systems clean. One final thing-once you've encountered a system that suffers from coupling issues and you've understood the negative impact it has on the business and even the development team, please use that knowledge as a tool to help future initiatives and teams you interact with to avoid the pitfalls. A favorite quote of mine to drive this home:
+
+## "Those who cannot remember the past are condemned to repeat it."
+
+#### - George Santayana.
+
+## References
+
+[MVC Design Pattern](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
+
+[3-Tier Architecture](http://www.simcrest.com/blog/BlogEntry/35) (simple explanation)
+
+[Alistair Cockburn's article on Hexagonal Architecture](http://alistair.cockburn.us/Hexagonal+architecture)

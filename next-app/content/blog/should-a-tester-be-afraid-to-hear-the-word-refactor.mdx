@@ -1,0 +1,22 @@
+---
+title: Should a Tester Be Afraid to Hear the Word Refactor?
+slug: should-a-tester-be-afraid-to-hear-the-word-refactor
+date: '2012-10-10'
+author: Agile Velocity
+excerpt: >-
+  I used to cringe when I heard developers say they were going to refactor some
+  code.  To me, as a tester, that meant they were going to change working code
+  and possibly introduce bugs into the software.  If it ain't broke, don't fix
+  it, right?  Why are we refactoring it?  Truly, the answer lies in [...
+categories:
+  - Technical Excellence & Engineering
+featuredImage: '/images/blog/probes-667840_1280.jpg'
+---
+
+![Testing probes representing software testing and refactoring](/images/blog/probes-667840_1280-1024x573.jpg)
+
+I used to cringe when I heard developers say they were going to refactor some code. To me, as a tester, that meant they were going to change working code and possibly introduce bugs into the software. If it ain't broke, don't fix it, right? Why are we refactoring it? Truly, the answer lies in basic Agile practices. Agile teams implement lean code that meets the user's needs, then we put the code in front of the user, get feedback, and continually evolve the code based on that feedback. We also implement code knowing we need to learn about our design decisions. Sometimes what we learn is that there is a better way to design the solution. All of these practices require code to be refactored. It is not a bad thing.
+
+However, what can be bad, is when a developer cannot make changes to some code because the code is too complex, or it is unclear what the code does. If there are no unit or integration tests automated, then it becomes risky to make changes and ensure there are no regressions in functionality. The best Agile teams understand this and ensure there is automated test coverage as features are being written. They rely on these automated tests for rapid feedback. They can refactor their code (or code other's have written) with confidence. The code remains testable, simple, and maintainable; all of which save time and heartache later on.
+
+So, testers should not fear code refactoring. We should work with developers to put unit and integration test frameworks in place on our projects. We should help our teams increase unit test coverage. We should encourage a team culture that embraces refactoring. We should only fear brittle, untestable code that must be retested manually after major code changes to existing functionality. I've tested code like this and I don't want to do it anymore. I'm smarter than that. And so are you.

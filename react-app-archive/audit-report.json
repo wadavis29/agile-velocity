@@ -1,0 +1,262 @@
+[
+  {
+    "page": "outcomes-detail",
+    "breakpoint": "1200",
+    "issue": "Clipped elements: div.outcome-hero-bg-number"
+  },
+  {
+    "page": "problems-detail",
+    "breakpoint": "1200",
+    "issue": "Clipped elements: div.problem-hero-bg-number"
+  },
+  {
+    "page": "path-to-agility",
+    "breakpoint": "1200",
+    "issue": "Clipped elements: div.p2a-hero-bg, div.p2a-shape"
+  },
+  {
+    "page": "outcomes-detail",
+    "breakpoint": "1024",
+    "issue": "Clipped elements: div.outcome-hero-bg-number"
+  },
+  {
+    "page": "problems-detail",
+    "breakpoint": "1024",
+    "issue": "Clipped elements: div.problem-hero-bg-number"
+  },
+  {
+    "page": "path-to-agility",
+    "breakpoint": "1024",
+    "issue": "Clipped elements: div.p2a-hero-bg, div.p2a-shape"
+  },
+  {
+    "page": "home",
+    "breakpoint": "768",
+    "issue": "Clipped elements: div.stat-card-accent"
+  },
+  {
+    "page": "outcomes-detail",
+    "breakpoint": "768",
+    "issue": "Clipped elements: div.outcome-hero-bg-number"
+  },
+  {
+    "page": "problems-detail",
+    "breakpoint": "768",
+    "issue": "Clipped elements: div.problem-hero-bg-number"
+  },
+  {
+    "page": "path-to-agility",
+    "breakpoint": "768",
+    "issue": "Clipped elements: div.p2a-hero-bg, div.p2a-shape"
+  },
+  {
+    "page": "home",
+    "breakpoint": "480",
+    "issue": "Clipped elements: div.shape, div.stat-card-accent"
+  },
+  {
+    "page": "home",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"\" (26px)"
+  },
+  {
+    "page": "home",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"What's Broken?\" (32px)"
+  },
+  {
+    "page": "home",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"\" (12px)"
+  },
+  {
+    "page": "home",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"\" (10px)"
+  },
+  {
+    "page": "home",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"\" (10px)"
+  },
+  {
+    "page": "outcomes-index",
+    "breakpoint": "480",
+    "issue": "Clipped elements: div.page-hero-bg"
+  },
+  {
+    "page": "outcomes-index",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"\" (26px)"
+  },
+  {
+    "page": "outcomes-detail",
+    "breakpoint": "480",
+    "issue": "Clipped elements: div.outcome-hero-bg-number"
+  },
+  {
+    "page": "outcomes-detail",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"\" (26px)"
+  },
+  {
+    "page": "outcomes-detail",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"See Our Approach\" (32px)"
+  },
+  {
+    "page": "problems-index",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"\" (26px)"
+  },
+  {
+    "page": "problems-detail",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"\" (26px)"
+  },
+  {
+    "page": "problems-detail",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"Sound Familiar?\" (32px)"
+  },
+  {
+    "page": "path-to-agility",
+    "breakpoint": "480",
+    "issue": "Clipped elements: div.p2a-hero-bg, div.p2a-shape"
+  },
+  {
+    "page": "path-to-agility",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"\" (26px)"
+  },
+  {
+    "page": "path-to-agility",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"See the 9 Business O\" (32px)"
+  },
+  {
+    "page": "navigator",
+    "breakpoint": "480",
+    "issue": "Clipped elements: div.navigator-hero-bg"
+  },
+  {
+    "page": "navigator",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"\" (26px)"
+  },
+  {
+    "page": "partner",
+    "breakpoint": "480",
+    "issue": "Clipped elements: div.partner-hero-bg"
+  },
+  {
+    "page": "partner",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"\" (26px)"
+  },
+  {
+    "page": "training-index",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"\" (26px)"
+  },
+  {
+    "page": "training-corporate",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"\" (26px)"
+  },
+  {
+    "page": "training-public",
+    "breakpoint": "480",
+    "issue": "Clipped elements: button.workshops-filter-btn, span.workshops-filter-count"
+  },
+  {
+    "page": "training-public",
+    "breakpoint": "480",
+    "issue": "Text overflow: \"Path to Agility®4...\""
+  },
+  {
+    "page": "training-public",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"\" (26px)"
+  },
+  {
+    "page": "training-public",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"All Workshops8\" (37px)"
+  },
+  {
+    "page": "training-public",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"Scrum3\" (37px)"
+  },
+  {
+    "page": "training-public",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"Leadership1\" (37px)"
+  },
+  {
+    "page": "training-public",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"Path to Agility®4\" (37px)"
+  },
+  {
+    "page": "training-courses",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"\" (26px)"
+  },
+  {
+    "page": "training-courses",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"All Courses\" (30px)"
+  },
+  {
+    "page": "training-courses",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"Scrum\" (30px)"
+  },
+  {
+    "page": "training-courses",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"SAFe®\" (30px)"
+  },
+  {
+    "page": "training-courses",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"Leadership\" (30px)"
+  },
+  {
+    "page": "training-courses",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"Kanban\" (30px)"
+  },
+  {
+    "page": "training-courses",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"Specialized\" (30px)"
+  },
+  {
+    "page": "course-detail",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"\" (26px)"
+  },
+  {
+    "page": "recognition",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"\" (26px)"
+  },
+  {
+    "page": "about",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"\" (26px)"
+  },
+  {
+    "page": "team",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"\" (26px)"
+  },
+  {
+    "page": "team-member",
+    "breakpoint": "480",
+    "issue": "Button too small for touch: \"\" (26px)"
+  }
+]

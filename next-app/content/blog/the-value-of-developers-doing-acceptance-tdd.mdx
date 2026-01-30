@@ -1,0 +1,46 @@
+---
+title: The value of developers doing Acceptance TDD
+slug: the-value-of-developers-doing-acceptance-tdd
+date: '2010-01-21'
+author: David Hawks
+excerpt: >-
+  I believe Test-Driven Development is one of the key Agile practices that
+  should be combined with Scrum in order to be highly productive. Scott Ambler's
+  recent article on Tragic Mistakes When Adopting Test-Driven Development (TDD)
+  in Dr. Dobbs.outlines TDD. Two forms of TDD With 'developer TDD'you ty
+categories:
+  - Technical Excellence & Engineering
+featuredImage: '/images/blog/homework-2521144_1280.jpg'
+---
+
+![Developer writing tests representing Test-Driven Development practices](/images/blog/homework-2521144_1280-1024x682.jpg)
+
+I believe Test-Driven Development is one of the key Agile practices that should be combined with Scrum in order to be highly productive. Scott Ambler's recent article on [Tragic Mistakes When Adopting Test-Driven Development (TDD)](http://www.ddj.com/architect/222301633?cid=Ambysoft) in Dr. Dobbs.outlines TDD.
+
+## Two forms of TDD
+
+- With "developer TDD"you typically use a xUnit tool, such as JUnit for Java or VBUnit for Visual Basic, to write developer tests. Developer tests, which include unit tests and simple integration tests, specify and validate the design of your code.
+
+- With "acceptance TDD" you use more sophisticated tools, such as the Fitnesse framework, to write what's often referred to as agile acceptance tests or story tests. These tests specify and validate your code.
+
+I hear many people talking about TDD in the context of unit testing but very few including the acceptance level. I believe this is a very crucial piece in order to be highly productive. This involves a shared ownership amongst the team across developers and QA. However, if you successfully get the developers engaged in writing their code to make an acceptance test pass, which is aligned with the acceptance criteria in a User Story, you can ensure they are writing barely sufficient code and increase productivity greatly. Productivity can be increased in the following ways:
+
+- With a less rigid structure to the roles there is less handoff between developer and QA. QA's function here would be to review the tests to ensure they satisfy the acceptance criteria and that all of the proper scenarios have been tested. This also makes it easier to get fully tested and releasable code by the end of the iteration. Without this QA typically is waiting until the code is written before they can test adding lag to the process.
+
+- Defects will be found sooner and by the developer writing the code. If the tests are run in the same cycle as the code be written (preferably prior to check in), this allows for higher quality and less waste in the process.
+
+"What is the role of QA if they aren't doing the acceptance tests?"
+
+## QA can then focus their energies on:
+
+- Assurance - reviewing the tests that the developers are writing to ensure quality and completeness
+
+- Analysis - work with the Product Owner to ensure the completeness of the requirements/ acceptance tests. Developers typically get focused on a single portion of the system, QA needs to focus on understanding the big picture and business intent.
+
+- Integration - automation of integration level tests across the project
+
+- Manual testing/ Edge Case - not all tests are worth automating (time to write, time to execute) and the QA strategy should be defined by the team for each story. These tests may still be documented and executed infrequently
+
+- Ad hoc/ exploratory - With the big picture understanding they can still spend some small amount of time "using" the system as a user would
+
+I have seen teams continue to increase the QA to Dev ratio almost up to 1:1 in order to achieve releasable and testable product by the end of the iteration. Is this really the most efficient and flexible use of resources? If developers were more engaged in "Acceptance TDD" would you need this?

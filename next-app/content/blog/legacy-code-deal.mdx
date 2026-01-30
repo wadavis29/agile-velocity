@@ -1,0 +1,53 @@
+---
+title: 'Legacy Code : Deal With It'
+slug: legacy-code-deal
+date: '2015-04-29'
+author: Agile Velocity
+excerpt: >-
+  When clients start the journey of an Agile transformation, it is almost never
+  without some pre-existing code. The question immediately comes up of how best
+  to deal with the code developed 'before', as in 'before we were doing Agile'
+  or 'before we wrote unit test' or 'before we were here'. Dealing wi
+categories:
+  - Technical Excellence & Engineering
+featuredImage: '/images/blog/nuclear-2082637_1280.jpg'
+---
+
+![Nuclear power plant representing radioactive legacy code that needs handling](/images/blog/nuclear-2082637_1280.jpg)
+
+When clients start the journey of an Agile transformation, it is almost never without some pre-existing code. The question immediately comes up of how best to deal with the code developed "before", as in "before we were doing Agile" or "before we wrote unit test" or "before we were here". Dealing with legacy code is important because it can be important, even critical, to a business. Its main distinguishing features are that legacy code is feared, changing it can be dangerous, and its continued presence is a drag on development.
+
+As Steven Sinofsky puts it in his excellent article [Surviving Legacy Code](http://blog.learningbyshipping.com/2013/04/02/surviving-legacy-code/),
+
+"Every project has code that might be deemed too hot to handle, or even radioactive. That's legacy code."
+
+Another good definition of legacy code is that it is a code base without automated tests. This leads to a fear that changing it will break its untested behavior.
+
+## Get a Plan to Deal with Legacy Code
+
+The first step is dealing with legacy code is to agree on a plan. Sinofsky summarizes four main ways of dealing with a legacy code base:
+
+- Remove It
+
+- Run new code parallel to the old
+
+- Rewrite the old code from underneath
+
+- Replace it in stages
+
+Each of these has tradeoffs and the right solution might be some combination. Before embarking on any of these approaches, though, it is a good idea to remove or at least address the "fear factor". There can be a number of sources for this, including a lack of solid understanding on how the code works, what assumptions were made when it was created, and a clear understanding of how it should function. Perhaps, have the team spend some time reviewing the legacy code structure and talking with those who helped create it.
+
+## Techniques to Deal with Legacy Code
+There are far too many techniques and strategies for dealing with legacy code to enumerate here, but luckily, there is a definitive reference that does just that: "[Working Effectively with Legacy Code](http://books.google.com/books/about/Working_Effectively_with_Legacy_Code.html?id=fB6s_Z6g0gIC)" by Michael Feathers. A lot of this excellent book focuses on untangling dependencies and making the legacy code more testable, and code that is better tested is code that can be changed with less fear.
+
+## Work Iteratively and Deliberately
+
+If part of the plan involves removing or rewriting portions of the legacy code, a good first step is write [Characterization Tests](http://en.wikipedia.org/wiki/Characterization_test) around the code base. These tests should "fence in" the legacy code and ensure that changes made to it do not affect other parts of the system. But be careful to spend time wisely. Writing a lot of unit tests around legacy code can be hard and the payoff can be small if that code has been in production a long time and not generating new bugs.
+
+A good approach might be to write tests "around" a functional area, refactor or reimplement the legacy code with new code, and repeat. Or, if the decision is to write and run the new code "side-by-side" with the legacy code, at least make sure that the new code passes the same characterization tests written for the old code.
+
+Legacy code is often just one of many items in a team's Tech Debt backlog. Convincing stakeholders that it is worthwhile to tackle can be challenging, but the first step is to start with a plan.
+
+## Get Started
+
+Somewhat like embarking on a new plan to lose weight and get back in shape, the most important part of dealing with legacy code can be just getting started. Leaving old, legacy code in place while only focusing resources on the new stuff can slow teams down and increase the costs of development. So, get started, deal with the legacy code that impacts development, and get your code base back in shape!

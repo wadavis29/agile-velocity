@@ -1,0 +1,72 @@
+---
+title: 'Behavior Driven Development:  Steps to Implement, Part I'
+slug: behavior-driven-development-steps-implement-part
+date: '2014-04-14'
+author: Agile Velocity
+excerpt: >-
+  Behavior Driven Development is the process of writing high-level scenarios
+  verifying a User Story meets the Acceptance Criteria and the expectations of
+  the stakeholders. The automation behind the scenarios is written to initially
+  fail and then pass once the User Story development is complete. BDD is
+categories:
+  - Technical Excellence & Engineering
+featuredImage: '/images/blog/dog-2126678_1280.jpg'
+---
+
+![Dog representing obedient behavior as metaphor for behavior driven development](/images/blog/dog-2126678_1280-300x187.jpg)
+
+Behavior Driven Development is the process of writing high-level scenarios verifying a User Story meets the Acceptance Criteria and the expectations of the stakeholders. The automation behind the scenarios is written to initially fail and then pass once the User Story development is complete.
+
+BDD is largely a collaboration tool that forces people working on a project to come together. It bridges the gap between stakeholders and the development team. Practicing BDD is fairly painless but does require a meeting to discuss the intended behavior the scenarios will verify. The meeting to write the BDD tests is usually an informal one which is led by the Product Owner or stakeholder and involves members of the development team. The goal is to collaborate so everyone is on the same page as to what this User Story is trying to achieve: Start with the story. Talk about the "so that". Discuss how the software currently works and how this story will change or impact current functionality.
+
+Scenarios are written from a user's perspective. Because they are run on a fully functioning system with real data, they can be expensive (meaning the time it takes to write, execute, and maintain the tests). However, the scenarios will serve as executable documentation for how the software behaves. This is useful for developers to understand each other's code and gives them tools to refactor with confidence. Over time, the tests will evolve as they are maintained and also serve as easy-to-read descriptions of features. Documenting behavior in this manner is useful when onboarding new team members by communicating the software's functionality.
+
+## Things to ask yourselves when writing scenarios:
+
+- What functionality is not possible or feasible to cover with lower-level automated tests? How do these tests differ from unit tests, integration tests, or service tests?
+
+- What is the "happy path" of the User Story functionality? This is the typical usage of the software.
+
+- What is the atypical usage? Are there variations of inputs that are possible, but used less frequently?
+
+- How should the system handle bad input?
+
+- How does the system prevent bad output? How does it display or log errors?
+
+- What is the impact on other parts of the system?
+
+- What are the integration points - other components, other applications? Should the tests include some verification of this integration, or is it covered elsewhere?
+
+## What Works Well
+
+The process that has worked well for me is to, first, write the scenarios together with the Product Owner.
+
+The PO should lead this discussion and write the steps in a way that makes sense to stakeholders. At least one Developer and one Tester should also be present. Some like to call thisthe "Power of Three". Read through the Acceptance Criteria asking the questions listed above. Try to use consistent language in the steps and use terms that make sense to people outside the development team. It may be tempting to write steps involving user interaction with the software, like this:
+
+Given I am on the Login screen
+
+When I enter "user1″ in the username field
+
+And I enter a "mypassword" in the password field
+
+And I click the Login button
+
+Then I should see the error message "Username/password is invalid"
+
+I have found, it is better to describe the behavior in broader terms not closely tied to the application layout itself. For example:
+
+Given I am on the Login screen
+
+When I enter invalid credentials
+
+Then I am not logged in and a meaningful error message is displayed
+
+This way, the code behind each step is closely tied to the application or the user interface, not the test scenarios themselves. As the application grows, the test steps themselves will be less likely to require changes, isolating the maintenance to the code behind the test scenarios.
+
+In the [second article](/blog/behavior-driven-development-steps-implement-part-ii) in this series, we'll discuss what to do once the scenarios are defined.
+
+Tool references: [http://cukes.info/](http://cukes.info/) (Ruby)
+
+ [http://www.specflow.org/specflownew/](http://www.specflow.org/specflownew/) (.NET)
+
+ [http://jbehave.org/](http://jbehave.org/) (Java)

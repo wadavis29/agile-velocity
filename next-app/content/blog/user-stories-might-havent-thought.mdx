@@ -1,0 +1,31 @@
+---
+title: User Stories that Product Owners Often Overlook
+slug: user-stories-might-havent-thought
+date: '2015-07-31'
+author: Agile Velocity
+excerpt: >-
+  Product Owners typically express application requirements from a user-centric
+  perspective. This usually means that non-functional requirements are not a
+  primary focus. However, Product Owners often forget that they and the
+  development team are also potentially a class of 'user' of features in the ap
+categories:
+  - Team Performance & Practices
+featuredImage: >-
+  /images/blog/Screen-Shot-2017-09-07-at-12.39.11-PM.png
+---
+
+Product Owners typically express application requirements from a [user-centric](http://en.wikipedia.org/wiki/User-centered_design) perspective. This usually means that non-functional requirements are not a primary focus. However, Product Owners often forget that they and the development team are also potentially a class of "user" of features in the application being developed. The PO and team might want features to help with maintenance and debugging, or with helping to determine how the system is being used. With this in mind, here is a quick list of some non-functional stories that POs often overlook:
+
+- ![User story tracking interface screenshot](/images/blog/Screen-Shot-2017-09-07-at-12.39.11-PM.png) Centralized Logging - Logging (using tools like [Logstash](https://www.elastic.co/products/logstash) or [Splunk](http://www.splunk.com/)) is increasingly important, especially in this day of clustered servers and VMs. This could be for maintenance, but also to help determine usage patterns. Something as simple as attaching sessionIDs to log statements so the actions of a single user across a bunch of servers can be correlated can be very useful.
+
+- Feature Usage Tracking - Being able to get real data on user behavior in order to direct feature development can be invaluable. This can start as a very light-weight tracking of features used over time in a small table but can be expanded later into full Operational Intelligence (see the aforementioned [Splunk](http://www.splunk.com/)).
+
+- Feature Toggles - While [feature toggles](https://en.wikipedia.org/wiki/Feature_toggle) are commonly used to help mitigate maintaining many branches, they can also be useful when there is some uncertainty about the how new features will affect user behavior. They are also a prerequisite for the next item, A/B testing. Besides, being able to turn off certain features without requiring a new deployment of code can be very useful.
+
+- A/B Testing Infrastructure - While it may not be in an initial set of requirements, A/B Testing Frameworks such as [Proctor](http://engineering.indeedblog.com/blog/2014/06/proctor-a-b-testing-framework/) can test, experiment, and provide real data to help determine which application features are the best solution for users.
+
+- Application Performance Monitoring - There are many tools that can track all manner of application performance ([here](https://blog.profitbricks.com/application-performance-management-tools/) is a list of 40), but even some simple logging of timestamps can help to determine where to spend the effort to increase the performance of your application.
+
+- Reporting - There is almost always a need for some reporting about an application in production. This could be on business data such as sign ups, data processed last week, or anything else that stakeholders in the company might want to know. Having at least some work in place to support these needs ahead of time is a wise decision.
+
+These are just a few of the [many](http://leadinganswers.typepad.com/leading_answers/2009/03/nonfunctional-requirements-minimal-checklist.html) non-functional user stories that might be necessary. Most of these stories can start as small, simple features that can be expanded on later as needs demand.

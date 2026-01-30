@@ -1,0 +1,89 @@
+---
+title: Infrastructure Agility
+slug: infrastructure-agility
+date: '2012-05-17'
+author: Agile Velocity
+excerpt: >-
+  Whether your team is agile, lean, or anything else you have likely run into
+  frustrations with your infrastructure See if any of the following strike a
+  chord with you in relation to Infrastructure Agility: You aren't sure how your
+  servers are configured Your servers, workstations, etc. aren't configu
+categories:
+  - Technical Excellence & Engineering
+featuredImage: >-
+  /images/blog/architecture-2557570_1280.jpg
+---
+
+![Modern infrastructure architecture representing agile IT systems](/images/blog/architecture-2557570_1280-1024x682.jpg)
+
+## Infrastructure Frustrations Are Common
+
+Whether your team is agile, lean, or anything else you have likely run into frustrations with your infrastructure. See if any of the following strike a chord with you in relation to Infrastructure Agility:
+
+- You aren't sure how your servers are configured
+
+- Your servers, workstations, etc. aren't configured the same way
+
+- Nobody is sure who changed a configuration file, or why, and what was the last good version of the file?
+
+- Who installed that rogue server process? Why was our standard version of a dependency upgraded that is now breaking our applications?
+
+- Why are our development servers configured differently than our QA servers? What will it take to make them the same?
+
+- How long will it take to upgrade or install application x on our cluster of servers?
+
+- Your developers/QA/UAT Testers are blocked 3 days waiting on ops to install/upgrade a server with something new needed for a story
+
+- It takes 3 days for new developers to get set up with all the standard dependencies (or the machine image used has old/missing versions and needs a lot of upgrading)
+
+No matter what your particular frustration, your infrastructure, and systems take time and effort. We see it all the time, but it is especially frustrating when teams following lean/agile principles who have put effort into eliminating waste and providing quick feedback find themselves against another wall they must continually climb and are regularly slowed.
+
+## Getting Control of Infrastructure
+
+We don't advocate solving a problem you don't have, so if frustrations like those mentioned above are not among the bigger problems affecting you, just file this away for later.. But for many of you the above probably resonates.
+
+So, where do you start?
+
+## Outsource It!
+
+First, why not just fix the glitch? Why spend time trying to address a problem you can get rid of? Look at your application, infrastructure, whatever that is causing you pain. Is it standardized enough that you can just offload the problem?
+
+We don't want to just move the problem to a team doing the same thing in another location. What I'm referring to is taking advantage of platforms that have taken common deployment or infrastructure scenarios and packaged the operations around them as a service. You do this when you choose to host a server on a cloud service like [Amazon] or [RackSpace]. This kind of cloud computing model which abstracts and automates the details of physical hosting of storage and computing resources is often referred to as Infrastructure as as Service, or [IaaS](https://en.wikipedia.org/wiki/Infrastructure_as_a_service).
+
+You can take this to another level by using a service like [Heroku](https://www.heroku.com/) or [AppFog](https://appfog.com/) that removes the need to manage servers and instead deploy to more highly managed environments that accomodate certain solution stacks. If your application fits their managed platform or isn't too customized you can avoid having to deploy both servers and much of your solution stack, focusing on your core application code and configuration. This level of cloud computing services is often referred to as Platform as a Service or [PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service).
+
+Offloading what you can offer you the reduced complexity of operations for some or all of your environments. But for many teams, we have found constraints that don't allow taking advantage of these types of services.
+
+## Control It!
+
+Whether you have resources in the public cloud, private clouds, or on good old bare metal hardware, you have work to do to manage provisioning, configuration, deployment, and tracking of assets and infrastructure.
+
+Agility in infrastructure is achieved through:
+
+- Providing good visiblity on the infrastructure you have
+
+- Eliminating bottlenecks to adding / changing your environments
+
+- Minimizing complexity
+
+- Being able to adapt quickly to changing business needs
+
+- Having a high level of communication and visibility across all those involved in delivering software to end users
+
+Many operations teams already track assets in various places. Some keep standard configuration files and checklists they use for consistency. Others have scripted common tasks in their daily operations work. But not all do these sorts of things. And even if they do, manual work ends up being the biggest bottleneck of all. The [Path to Agility®](/contact) requires finding straightforward, consistent ways to communicate, control, and automate your infrastructure management.
+
+## Infrastructure as Code
+
+While not necessarily new, there has been some disruptive change in recent years led by the growing popularity of tools like [Chef](https://www.opscode.com/chef/) and [Puppet](https://puppetlabs.com/). Similar tools, such as [CFEngine](https://cfengine.com/) have been around much longer in different incarnations both inspiring the newer generation of tools and greatly evolving in their own ways. The combination of these types of tools with the rapidly expanding selection of virtualization and cloud tools.
+
+The philosophy is simple, with the support of the right tools a team can create configuration files and scripts (code) that describe what their infrastructure should look like and how to go about creating it. This code can be executed to provision systems, configure and install dependencies, deploy applications, take inventory of what is deployed, and keep things consistent.
+
+As Jesse Robins once described, the goal is to:
+
+> Enable the reconstruction of the business from nothing but a source code repository, an application data backup, and bare metal resources.
+
+Such an approach to managing infrastructure isn't limited to servers either. Some groups use it to help keep developer, tester, or other types of desktop machines up to date with the latest tools/configuration a team needs. When you have only a few machines to manage such an approach is neat. When you have hundreds or thousands it becomes essential.
+
+Hopefully, this has piqued your interest or brought awareness to how we include infrastructure in our assessment of agility and waste. As always, don't solve a problem you don't have. But if infrastructure issues are affecting your team and you have identified the bottlenecks stay aware of your options.
+
+We will follow up with additional posts in this series on Infrastructure Agility with looks at DevOps and a closer look at tools like Chef and Puppet.

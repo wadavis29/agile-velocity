@@ -1,0 +1,192 @@
+---
+title: It's Not Just About Process
+slug: its-not-just-about-process-2
+date: '2013-08-12'
+author: Agile Velocity
+excerpt: >-
+  Agile software practitioners focus a lot of attention on people,
+  communication, collaboration, and strong values. In many environments, these
+  are unquestionably the best opportunities for improvement. Inevitably, though,
+  all software development teams reach a point where their greatest opportunity
+  f
+categories:
+  - Frameworks & Methodologies
+featuredImage: '/images/blog/mark-995567_1280.jpg'
+---
+
+Agile software practitioners focus a lot of attention on people, communication, collaboration, and strong values. In many environments, these are unquestionably the best opportunities for improvement. Inevitably, though, all software development teams reach a point where their greatest opportunity for improving the way they implement and deliver a product are of a technical nature.There is no single standard set of universal technical practices, andBest Practices really need to be thought out in the context in which they would be used. Each team should look at what is most appropriate for their context.
+
+## Practices
+
+Here are the core practices we see used by high-performing Agile teams:
+
+### Agile Testing
+
+Agile testing is a core part of applying the lean principle of Build Quality In as we develop products. Testing in Agile involves applying testing in a way that increases collaboration and understanding, improves feedback, and helps implement quality products quicker. While the use of automation is an important practice, ensuring we can do the types of manual testing not easily automated, but provide valuable feedback, are just as important.
+
+The key practices and principles here are:
+
+- [Agile acceptance testing](http://guide.agilealliance.org/guide/acceptance.html)
+
+- Move QA up-front
+
+- Minimize QA at the end of the cycle
+
+- [Ensure cross-functional collaboration](http://gojko.net/2008/11/12/specification-workshops-an-agile-way-to-get-better-requirements/)
+
+- Testing as an integral part of implementation (incrementally and iteratively)
+
+- Automate the right things
+
+Other Resources:
+
+- The [Agile Testing Quadrants](http://lisacrispin.com/2011/11/08/using-the-agile-testing-quadrants/)
+
+- The [Test Pyramid](http://martinfowler.com/bliki/TestPyramid.html)
+
+- The [Agile Testing](http://lisacrispin.com/agile-testing-book-is-now-out/) Book
+
+- [Behavior-Driven Development](http://en.wikipedia.org/wiki/Behavior-driven_development) or [Specification by Example](http://en.wikipedia.org/wiki/Specification_by_example)
+
+### Test-Driven Development
+
+For most teams automated testing is not new. Some form of unit testing or functional testing is common, but to get a better return on our testing investment, there is a need to level up. We can increase the level and timeliness of feedback by adopting the practice of [Test-Driven Development (TDD)](http://en.wikipedia.org/wiki/Test-driven_development). In addition to earlier feedback, [TDD](http://en.wikipedia.org/wiki/Test-driven_development) leverages tests to give the team design feedback that influences better and less wasteful implementation of features than is usually found by testing after implementation.
+
+The same TDD workflow that is most often applied to Unit Testing can be applied to different levels of tests. The most common TDD related testing activities are:
+
+- [Test-Driven Development](http://en.wikipedia.org/wiki/Test-driven_development)
+
+- [Acceptance-Test Driven Development](http://testobsessed.com/2008/12/acceptance-test-driven-development-atdd-an-overview/)
+
+- [Behavior-Driven Development](http://en.wikipedia.org/wiki/Behavior-driven_development) or [Specification by Example](http://en.wikipedia.org/wiki/Specification_by_example)
+
+- [Test Automation](http://en.wikipedia.org/wiki/Test_automation)
+
+- [Refactoring](http://www.refactoring.com/)
+
+Other Resources:
+
+- [Red-Green-Refactor](http://agileinaflash.blogspot.com/2009/02/red-green-refactor.html)
+
+- Elisabeth Hendrickson has a great [ATDD example](http://testobsessed.com/wp-content/uploads/2011/04/atddexample.pdf) that is a helpful read.
+
+- Book: [Growing Object-Oriented Software Guided by Tests](http://www.growing-object-oriented-software.com/)
+
+- [TDD process smells](http://agileinaflash.blogspot.com/2009/03/tdd-process-smells.html)
+
+- [BDD In a Nutshell](http://agilecoach.typepad.com/agile-coaching/2012/03/bdd-in-a-nutshell.html)
+
+### Continuous Integration
+
+Software implementation involves the combined efforts of one or more people brought together to form something that is ultimately deliverable. Feedback should be given at the earliest point possible to tell us when new features do not cleanly integrate with existing ones, or the behavior of the system has changed in an unexpected way. While merging and integrating code lines is often considered painful, doing it more often and in smaller increments makes is easier, as well as provides earlier feedback.
+
+The most common practices within [Continuous Integration](http://martinfowler.com/articles/continuousIntegration.html) are:
+
+- Use a single source repository or main code line
+
+- Automate the build
+
+- Test each build
+
+- Commit to the mainline frequently (daily)
+
+- Drive integration, build, etc from every commit
+
+Other Resources:
+
+- Book: [Continuous Integration: Improving Software Quality and Reducing Risk](http://martinfowler.com/books/duvall.html)
+
+- Martin Fowler's [Continuous Integration](http://martinfowler.com/articles/continuousIntegration.html) article
+
+### Continuous Delivery
+
+Continuous Delivery is in many ways an evolution or extension of [Continuous Integration](http://martinfowler.com/articles/continuousIntegration.html) to extend benefits of frequent feedback and automation to packaging and deployment. This means continually delivering code to relevant environments (even production) as soon as it is ready by leveraging deployment and infrastructure automation. This is often where much of [DevOps](http://en.wikipedia.org/wiki/DevOps) is focused to support collaboration, sharing, and feedback between development and operations.
+
+With [Continuous Delivery](http://en.wikipedia.org/wiki/Continuous_delivery) we mean:
+
+- Using [deployment pipelines](http://www.informit.com/articles/article.aspx?p=1621865) and deployment automation
+
+- [Test Automation](http://en.wikipedia.org/wiki/Test_automation)
+
+- Continuous Deployment
+
+Other Resources:
+
+- [Jez Humble's Book/Blog](http://continuousdelivery.com/)
+
+- [Deployment Automation Patterns cheat sheet](http://refcardz.dzone.com/refcardz/deployment-automation-patterns)
+
+- [Continuous Delivery vs. Continuous Deployment](http://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/)
+
+### Refactoring
+
+The goal of Code [Refactoring](http://www.refactoring.com/) is to restructure existing code in order to improve its readability, reduce complexity, improve maintainability, and make it more extensible without changing the external behavior of the code. This is done by relying on automated tests to ensure the behavior of the code stays the same while making a series of small, incremental changes to the internal structure of the code.
+
+Many modern Integrated Development Environments (IDEs) and code editors provide functionality for assisting with applying common patterns of refactoring such as extracting a new class from an existing one or renaming a method across a code base for clarity/readability.
+
+Refactoring is a key part of [Test-Driven Development](http://en.wikipedia.org/wiki/Test-driven_development) but can also be performed outside of the cycle when necessary. Normally, the observation of a [Code Smell](https://en.wikipedia.org/wiki/Code_smell) is the driver for performing refactoring.
+
+Other Resources:
+- [Code Smell](https://en.wikipedia.org/wiki/Code_smell)
+
+- [Database Refactoring](https://en.wikipedia.org/wiki/Database_refactoring)
+
+### Peer Review
+
+Agile Teams are always looking for frequent feedback and knowledge sharing and achieving both at the same time is a big win. By increasing the number of eyes that see and understand any given part of a code base, design, architecture, infrastructure, etc., we apply more knowledge, perspective, and experience to a solution and increase the number of people effectively working in that area.
+
+Core Practices:
+
+- Code Reviews
+
+- [Collective Ownership](http://www.extremeprogramming.org/rules/collective.html)
+
+- [Pair Programming](http://en.wikipedia.org/wiki/Pair_programming)
+
+### Emergent Design
+
+Developers, architects, and teams often struggle with how and when to approach design. In contrast to the more waterfall style of [Big Design Up Front](http://en.wikipedia.org/wiki/Big_Design_Up_Front) in a designated phase, Agile teams tend to design all the time and let the design emerge as features are added. This certainly happens continually through refactoring as part of [Test-Driven Development](http://en.wikipedia.org/wiki/Test-driven_development), but other elements of design also take place in planning sessions and designated design sessions. By employing emergent design throughout, we reduce the waste or rework associated with unvalidated or unused designs.
+
+Some key practices and concepts are:
+
+- [Principle of The Last Responsible Moment](http://trustartist.com/2011/10/11/the-last-responsible-moment-mindset/)
+
+- Simple Design (Minimizing Accidental Complexity)
+
+- Finding Effective Abstractions
+
+- [Harvesting Idiomatic Patterns](http://www.ibm.com/developerworks/library/j-eaed9/)
+
+- [Managing Technical Debt](http://www.infoq.com/articles/managing-technical-debt)
+
+- Genericness (Over Engineering)
+
+- TDD as a Design Tool
+
+- [Refactoring](http://www.refactoring.com/)
+
+Other Resources:
+
+- Kent Beck's [Rules of Simple Design](http://agileinaflash.blogspot.com/2009/02/simple-design.html)
+
+- ["You Ain't Gonna Need It" (YAGNI)](http://en.wikipedia.org/wiki/You_aren't_gonna_need_it)
+
+- [Essential Complexity](http://en.wikipedia.org/wiki/Essential_complexity) vs. [Accidental Complexity](http://en.wikipedia.org/wiki/Accidental_complexity)
+
+- [Clean Code](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
+
+### DevOps
+
+[DevOps](http://en.wikipedia.org/wiki/DevOps) is often discussed as an outside yet complementary practice to Agile. But its focus on collaboration, shared understanding, and shared responsibilities across Development and Operations are much like the Agile team struggles between Developers and Testers or other combinations of Roles. For Agile teams, [DevOps](http://en.wikipedia.org/wiki/DevOps) is a key part of achieving Continuous Deployment and [Continuous Delivery](http://en.wikipedia.org/wiki/Continuous_delivery). These practices are also important for improving consistency, reducing wait time and other wastes, and sharing knowledge between roles that traditionally have been very siloed.
+
+While collaboration and communication are critical, the key technical practices involved are:
+
+- Deployment Automation
+
+- [Infrastructure Automation](http://www.ibm.com/developerworks/library/a-devops2/)
+
+- [Infrastructure as Code](http://architects.dzone.com/articles/infrastructure-code)
+
+## Practices for Improvement
+
+Whether you are Agile or Lean, use Scrum or Kanban, or none of the above, these practices and principles and others like them should be considerations for your toolbox and for initiating team improvement.

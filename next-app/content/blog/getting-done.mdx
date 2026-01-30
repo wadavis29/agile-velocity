@@ -1,0 +1,62 @@
+---
+title: Getting to Done
+slug: getting-done
+date: '2015-09-04'
+author: David Hawks
+excerpt: >-
+  Part 5 of 6 in the 'Double the Value in Half the Time' series based on David
+  Hawks' presentation from Keep Austin Agile 2015. Stay tuned for subsequent
+  posts... The fifth problem... we're not getting things done. This is the
+  Scrumbut part of Scrum. 'Yeah, we do Scrum but we carry over stuff every
+  sprint
+categories:
+  - Agile Transformation
+featuredImage: >-
+  /images/blog/Illusion-of-Progress-e1504799411619-scaled.jpg
+---
+
+Part 5 of 6 in the "[Double the Value in Half the Time](/blog/using-agile-deliver-double-value-half-time-series)" series based on David Hawks' presentation from Keep Austin Agile 2015. Stay tuned for subsequent posts...
+
+The fifth problem... we're not getting things done. This is the Scrumbut part of Scrum. "Yeah, we do Scrum but we carry over stuff every sprint. The work just doesn't fit in two weeks." We have to figure how to break work down so it can be finished in a sprint. If not, we're not getting to done and we're not getting that [potentially shippable product increment](/blog/potentially-shippable-product-increment-pspi-rosetta-stone-software-development).
+
+## Illusion of Progress
+
+Let's say we have a waterfall project that is projected to be a 5-month project and we're going to do requirements, design, two months of development and a month of testing. You are the project manager who is responsible for [red-yellow-green status](https://en.wikipedia.org/wiki/Traffic_light_rating_system#Traffic_Light_RAG_and_BRAG_.28or_RAGB.29_Milestone_Project.2C_Program_and_Portfolio_status_reporting). We're going along and we finish the requirements in the first 4 weeks and we get it all reviewed, signed off and all the changes integrated. We've finished requirements in first four weeks of a five-month project. Are we green, yellow or red? Green! We finished on time. We get the design done on time, reviewed, validated and signed off. What color are we now? Green! We're 40% complete. And then we do the development - the code is written, checked in, built and integrated--finished on time by the end of month 4. Still Green!
+
+What happens a week or two into testing? We turn red. Like a deep good wine, red. But wait, at this point weren't we 80% done? But what were we 80% done with? The time, the schedule, the requirements at the beginning (we think!). We're at least done with our schedule and probably our budget at this point. But now all of a sudden we've gone red.
+
+![Getting to done - Illusion of Progress](/images/blog/Illusion-of-Progress-e1504799411619-1024x698.jpg)
+
+How do we salvage this project and get back to green? What are our options?
+
+Push the date. Time is always an option. Politically maybe not always a good option, but it is an option. What else?
+
+Cut features. Let's think about that - requirements, design, and development are all a sunk cost at this point. We can't go back and do less development so it looks like the scenario from last time, "Hey that feature you've been working on, can you just go comment it all out because it's not going to make the release."
+
+Test less. Maybe our release criteria at the beginning of the project were to fix all Sev 1 and Sev 2 defects. Then all of a sudden we're red and we say only fix the really bad Sev 1s. "We'll do a quick patch right after we release." So now we're sacrificing quality and time. Or we could just not test parts of the scope - "I think it's pretty stable and no one uses that feature anyway."
+
+These aren't good options. We're finding things out too late. Think about an iceberg - a risk iceberg. All we can see is the tip and we're just able to mitigate some of the risks through the first phases of the project and then we hit testing and there are all these issues underneath the waterline. Testing is the first time we're revealing the quality of our product and there are usually things that are wrong. There's a reason why QA has a job!
+
+## Working Software is our Primary Measure of Progress
+
+At that point, it's too late for us to address many of those issues. In Agile and Scrum, we work in sprints, we want to get to done. And there's this joke about being done done - are you done... or are you done done? Did you meet the definition of done? Is it potentially shippable? We want to work in slivers of functionality. That doesn't mean that we have to release every two weeks; we're saying the work is of quality that itcould be released. So if you were building something like an [Amazon](http://www.amazon.com/) site and in this sprint the team completed the shopping cart functionality, but you couldn't do credit card processing yet, is it potentially shippable? What if I said that we tested and can add products of all different types, remove items, change quantities and all of that works with no major bugs. Is it potentially shippable? Is it of quality that it could ship? Yes. But is it valuable enough to ship yet? No. Those are two different things. The Product Owner could decide we need to get this feature out there and see if anyone adds items to the cart. "We're going to do a big launch - come add items to your cart; in two weeks you'll be able to buy it." Maybe that makes sense.
+
+Sometimes there is a business reason to ship, but what the main goal is to be able to validate progress - working software is our primary measure of progress--not a finished a requirements document ("we're 20% done"), not code complete ("we're 80% done"), but potentially shippable. So if we have 10 features to get done over the next four sprints and after sprint two we have 4 of 10 features done, we're 40% complete and we mean it. In that case, would you say we're green, yellow or red? We're 40% done and we're halfway through the time. We're yellow. We get early warning indicators now. We're able to assess the risk every two weeks. A wise director of QA once told me, "We can release anytime you want. My job is to assess the risk of releasing right now." And that's what we're able to do--we can assess, address and mitigate the risks by fixing the bugs that we find every two weeks so that we're potentially shippable.
+
+And this is the Rosetta stone of Agile--if you can finish things that are small and potentially shippable every two weeks, then it allows you to deviate from the orange line earlier. It allows you to assess the impact of change and you have the agility to pivot as the requirements change in the business. But if you're working on big long features carried over from sprint to sprint, you're not able to do that. So we've got to figure out how to break work down. How do we work in a cross functional way where we have development and QA on the same team, getting things all the way to the finish line during the sprint?
+
+Let me walk you through a scenario. This was a real life case when I was learning Agile and I thought I had figured it out. We've figured out Agile--we've got sprints, we're going to test inside these sprints and we're using story points. We had two weeks sprints and we planned 20 points into each sprint and then a hardening sprint at the end.
+
+Points are a relative measure--20 points is twice as much work as 10 points. With 20 points worth of work planned for each sprint, in 10 weeks we would have 80 points complete (no points in the hardening sprint). And our definition of done was that we were not only building it but also testing it and we had a good amount of automation (we thought we were rocking this agile thing). We were fixing as many bugs as would fit in our timebox, but any other bugs we'd put in our hardening sprint. We just kept moving those to the hardening sprint. And how long do you think that hardening sprint took? It ended up taking 8 weeks. So really what happened is that we delivered 80 points in 16 weeks.
+
+## Go Slow to Go Fast
+
+It looked like we were getting a lot done every two weeks and we were telling ourselves we were getting a lot done, but we realized we needed to be more disciplined about our definition of done. We needed to go slow to go fast. So next time, we said our definition of done now includes fixing all bugs (of high enough severity) that are required to release. And then we did 15 points in every sprint, so in 10 weeks we got 75 points done. That's almost double the work, in half the time. And all we did was go slower.
+
+The developers argued they could do 20 points! No, you can't. You can get 20 points coded, but not tested and all the way to done. So a question to ask is... what is the job of the developer? Is the job of the developer to write code or to deliver value and outcomes? We need to get them involved in discovery. We need to get them involved in quality. We need to get them involved in getting things all the way to the finish line. It's not just about how many lines of code they're writing; that's not the bottleneck. The bottleneck is releasing a bunch of bad software that is missing the mark. We need to be delivering software that is solving problems and meeting the needs of our customers.
+
+## Stop Starting, Start Finishing
+
+We have the saying "Stop starting, start finishing". It's easy for us to start work and it's easy for the business to come up with new ideas. And as managers, what we normally do is a cycle of a new idea comes in, we triage it and assign it to out, another new idea comes in, we triage and assign it and now it's off my plate so I can go play golf. But we need to block those batons up front because it's easier for us to manage the queue of work that we haven't started than to manage all the work in all of these queues. And if we have a lot of queues, then our cycle time becomes really long. So we want to not start stuff until we finish. Don't just shove more paper in the printer, wait until we get something done and then pull the next highest priority thing in. And prioritization becomes a lot easier for the Product Owner. Because if we finish two things every week, we just look at the list for the next two things. We don't need to prioritize 100 items, we just need to know the next two. We can work on those and get those done.
+
+In order to get to done, a key Agile capability, you and your teams will need to break some tough habits. Sometimes, extra guidance via Agile coaching can help. [Learn more about our supplementary Agile coaching services like agility tune-ups here.](/contact) Next topic in the Double the Value in Half the Time series: [Prioritize](/blog/prioritize)

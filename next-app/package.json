@@ -1,0 +1,31 @@
+{
+  "name": "agile-velocity",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "predev": "node scripts/optimize-images.js",
+    "dev": "next dev",
+    "prebuild": "node scripts/optimize-images.js",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "optimize-images": "node scripts/optimize-images.js",
+    "optimize-images:watch": "node scripts/optimize-images.js --watch",
+    "optimize-images:force": "node scripts/optimize-images.js --force"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "next": "^14.2.21",
+    "next-mdx-remote": "^5.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "reading-time": "^1.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.21",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "sharp": "^0.34.5"
+  }
+}

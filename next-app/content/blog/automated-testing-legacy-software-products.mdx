@@ -1,0 +1,36 @@
+---
+title: Automated Testing for Legacy Software Products
+slug: automated-testing-legacy-software-products
+date: '2014-03-20'
+author: Agile Velocity
+excerpt: >-
+  Many times, we experiment with ideas and processes on new, or 'greenfield',
+  projects.  When starting something new, it is human nature to start with a
+  clean slate and go from there.  However, this is not always possible when
+  automating testing.  By nature, software features are first tested manually
+categories:
+  - Technical Excellence & Engineering
+featuredImage: '/images/blog/atm-1567136_1280.jpg'
+---
+
+![ATM machine representing legacy software systems requiring automated testing](/images/blog/atm-1567136_1280-1024x670.jpg)
+
+Many times, we experiment with ideas and processes on new, or "greenfield", projects. When starting something new, it is human nature to start with a clean slate and go from there. However, this is not always possible when automating testing. By nature, software features are first tested manually, most of the time followed by scripted test cases, and then the QA team starts thinking of ways to automate the testing. This just makes sense. I've heard it said "the definition of a legacy application is one that does not have any automated tests."
+
+So, you know you need to automate some of your testing. Maybe your team has acquired the skills (through new hires, classes, etc.) to begin writing automated test code. Where do you begin? Who should be involved? In talking with clients and other software testers in the Austin community, I get asked these questions a lot. Basically, how do we approach automating the testing legacy systems?
+
+There is no single answer to this question. I believe what works best is to take the problem back to the team and start the discussion. The solution varies based on many factors such as the application under test, the skills of the team, and the value the team wants to gain from automating testing. There are several factors teams need to take into account when starting the endeavor of automated testing. The best automated test solutions involve tests at the unit, integration, and user levels. When starting out, ask when will the tests be executed, who will execute them, how frequently, and how much execution time will be tolerated before the team refactors the tests to improve performance? These are important things the team should agree upon from the beginning (not to say the decisions cannot be altered after learning more).
+
+## Start With Some Analysis
+
+Do some analysis to decide where to start. Used tools such as [Sonar](http://www.sonarsource.com/) to find out what classes are the most complex with the fewest unit tests? What files change the most frequently (therefore increasing risk of breakage)? What functional areas of the application are the most critical? Which functional areas are the easiest to automate? Any manual tests that are difficult for humans to execute, but easy for a computer? Are the manual tests boring or repetitive therefore causing possible human-error or oversight? How about tests requiring a lot of setup?
+
+## Take an Iterative Approach
+
+Once you have a list of areas you want to automate, capture them as Technical Debt user stories, prioritize the list (as your [Product Owner](/blog/technical-skills-product-owner) would do for features) based on effort and value. Keep in mind, the effort may vary greatly based on the tool or language chosen. As you probably know, there are many frameworks and tools for automating testing. Approach your evaluation of these as you would the software you build-in an iterative fashion. Try test tools that describe functionality with behavioral test scenarios, such as [cucumber](http://cukes.info/). If yours is a web application, evaluate javascript testing frameworks and tools which access the DOM and drive the user-interface, like [Selenium](http://docs.seleniumhq.org/projects/webdriver/). Evaluate the benefits of creating mock objects to use in automated tests with tools like [mockito](https://code.google.com/p/mockito/).
+
+## Share the Responsibility (and the benefit)
+
+Every team needs to decide for themselves where to start and where the most value would be gained. Testers should collaborate with the developers in these decisions! They are software engineers and test automation is software, so why go it alone? Developers provide insight into making the automated test code simple, fast, reusable, and maintainable. Also, developers have much to gain from executing automated tests before they check code changes into version control, but the tests need to execute in their development environments and the feedback needs to be quick. Find a test framework that allows a subset of tests to be executed by developers to help them verify changes before commits. Then, extend the framework to get more coverage or perform end-to-end testing. Tests that are written solely by the testers and never understood or maintained by the other members of the team have a lesser value to the team at large. Find a way to automate tests that benefit the developers, testers, and even the product owner, and you will be happy you did.
+
+References: [Working Effectively with Legacy Code](http://www.objectmentor.com/resources/articles/WorkingEffectivelyWithLegacyCode.pdf)

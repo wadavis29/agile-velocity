@@ -1,0 +1,68 @@
+---
+title: 'Behavior Driven Development:  Steps to Implement, Part II'
+slug: behavior-driven-development-steps-implement-part-ii
+date: '2014-04-14'
+author: Agile Velocity
+excerpt: >-
+  In the first article of this two-part series, we discussed how to define
+  scenarios for testing.  Now, once this is done,  the Testers can partially
+  implement the new steps to fail. For example, adding assertions that a file
+  exists on the file system. Or, writing code returning a negative result for 
+categories:
+  - Technical Excellence & Engineering
+featuredImage: '/images/blog/brick-2449728_1280.jpg'
+---
+
+![Building blocks representing behavior driven development implementation](/images/blog/brick-2449728_1280-1024x682.jpg)
+
+In the [first article](/blog/behavior-driven-development-steps-implement-part) of this two-part series, we discussed how to define scenarios for testing. Now, once this is done, the Testers can partially implement the new steps to fail.
+
+For example, adding assertions that a file exists on the file system.
+
+Or, writing code returning a negative result for now.
+
+Maybe the code will eventually query the database to return a positive result, or maybe it will ensure some value is displayed on the UI. Sometimes this part is minimal; sometimes it can include almost all of the step implementation.
+
+Lastly, during feature implementation, the Developer writes the final test code to make the scenario pass.
+
+I encourage Developers and Testers pair at this stage. This type of teamwork keeps the Tester engaged in how the code is being implemented and ensures they understand how the software works.An informed Tester is a good Tester.
+
+As you probably know, automated tests provide more value the more frequently they are executed. This is why you want to be smart about the tests covered at the user level. Automated testing is an investment. The team should view the tests as code as well.
+
+Automated tests require maintenance to keep them passing and best if shared by all members of the team. When practicing BDD, make sure all scenarios provide value. They should not be too difficult to automate. Be careful not to include too many variations of input data. If possible, cover the various inputs using tests at lower levels: unit, integration, service-level. Use the BDD scenarios to cover what is not, or better yet, cannot be covered by other types of automated tests. Don't be afraid to get rid of a scenario altogether if it doesn't provide value. It is okay to run some tests manually as long as the team understands manual tests are executed much less frequently, so feedback is delayed.
+
+## Tips for BDD:
+
+- Write them to be executed locally on a Developer's machine
+
+- Monitor execution time and keep it to a minimum
+
+- Scenarios should not be dependent on each other
+
+- Scenarios can be executed multiple times in a row and still pass (some cleanup may be necessary)
+
+- To keep the number of steps from getting out of hand, pass in variables to the steps to maximize reuse
+
+- Keep your steps organized in separate files by major functional area
+
+- Scenarios are grouped to allow for a quick regression test of each major functional area, or a full regression of the entire system
+
+- Use source control for your test code
+
+## When BDD is done properly (before implementation), the real value is gained by simply collaborating and discussing the expected behavior of the software!
+
+Once implementation is done, the scenarios ensure the software meets the needs of the stakeholders. From then on, the automated tests act as a safety net for developers to refactor code and implement new features with confidence.
+
+Teams should strive to make execution of at least a portion of the BDD tests part of their Continuous Integration build/deployment process and make the test results visible. Failing test scenarios around existing functionality should be a top priority to fix.
+
+Have fun!
+
+[See Behavior Driven Development Part I](insights/blog/behavior-driven-development-steps-implement-part)
+
+Other resources for BDD:
+
+Tool references: [http://cukes.info/](http://cukes.info/) (Ruby)
+
+ [http://www.specflow.org/specflownew/](http://www.specflow.org/specflownew/) (.NET)
+
+ [http://jbehave.org/](http://jbehave.org/) (Java)

@@ -1,0 +1,40 @@
+---
+title: Virtualization Makes Me a Better Developer
+slug: virtualization-makes-better-developer
+date: '2015-01-19'
+author: Agile Velocity
+excerpt: >-
+  In the past, developers either had only the choice between multiple machines
+  or sharing development environments. In the first instance, this is an
+  expensive solution and in the second, lots of developers sharing a single
+  environment leads to contention issues. To further exacerbate this problem, th
+categories:
+  - Team Performance & Practices
+featuredImage: '/images/blog/clouds-1845517_1280.jpg'
+---
+
+![Cloud computing and virtual machines representing development virtualization](/images/blog/clouds-1845517_1280.jpg)
+
+In the past, developers either had only the choice between multiple machines or sharing development environments. In the first instance, this is an expensive solution and in the second, lots of developers sharing a single environment leads to contention issues. To further exacerbate this problem, the trend is towards application deployments that involve multiple servers.
+
+Luckily, a solution has presented itself in the form of virtualization. Now, all of the systems needed for running a deployed application can be hosted on my laptop using Virtual Machines (VMs). I have been using Oracle's [VirtualBox](https://www.virtualbox.org/) on my MacBook Pro (16GB RAM), but the same applies for any virtualization technology you choose. By using a VM (or several), I am able to isolate configuration changes from my development system to help make my test environment as production like as possible.
+
+## Not Just Linux
+
+Also, I am able to easily switch out dev environments, so I can test on multiple target OSs, all while using the same underlying hardware. "That's great", you say, "but what about Windows and its associated licenses?". Well, Microsoft has made available VM images for a full spectrum of host OSs, VM software platforms, and a range of IE and Windows flavors. These Windows images have a 90-day time limit from when you first start using them, but, the same VM image file can be used to make new Virtual Machines and the 90-day time limit starts over. See [Ray Bango's Blog](http://blog.reybango.com/2013/02/04/making-internet-explorer-testing-easier-with-new-ie-vms/) for more on this.
+
+## Automate Them
+
+The next step in making the best use of VMs is to make the process of spinning them up and deploying to them automated. [Vagrant](http://www.vagrantup.com/) can really help here. I've used Vagrant to automate the whole process of provisioning, deploying, and even testing an application and the benefits were enormous. Note using Vagrant with a Windows VM can be a bit more difficult. You might need to create your own Vagrant Box using a tool like [Packer](http://www.packer.io/intro/index.html). See the article [Creating Windows BaseBoxes](http://jongalentine.com/2012/12/22/creating-vagrant-base-boxes-with-veewee/) and this [Packer Windows](https://github.com/joefitzgerald/packer-windows/) GitHub repo for pointers on making Windows work with Packer and Vagrant.
+
+You can also take things a step further and automate the deployment of your app with tools like [Chef](http://www.getchef.com/) or [Puppet](http://puppetlabs.com/), which you should probably be doing anyway.
+
+## Costs
+
+You might think by using VMs I have to give up some performance, but that is not always the case. For example, my current application development requires an Oracle DB. I run this on a Linux VM. I have found that it is much easier and faster to backup and restore snapshots of the entire VM in VirtualBox than to use Oracle's tools to backup and restore the DB.
+
+Another cost associated with using VMs is memory. This is unavoidable. But, with memory prices at the point that 16GB is under $200, this is a price I am more than willing to pay.
+
+## VMs are not just for the Cloud
+
+Because virtualization has been used mostly to support IT and DevOps activities, developers may be unaware of their capabilities or how easily they can be used, but with a little effort, the payoff can be dramatic. Also, I have found deploying to locally hosted VMs to be a much faster process when compared with deploying to Cloud VMs. In conclusion, by deploying and developing using a Virtual tier, I am able to get more accurate and more rapid feedback when compared to using a shared Dev or QA tier, and that makes me a much better developer.

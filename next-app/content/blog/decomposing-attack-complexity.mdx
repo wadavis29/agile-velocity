@@ -1,0 +1,48 @@
+---
+title: Decomposing to Attack Complexity
+slug: decomposing-attack-complexity
+date: '2013-11-21'
+author: Agile Velocity
+excerpt: >-
+  Our first post in a series on decomposition introduced the importance of
+  breaking things down throughout the process of delivering software. Let's
+  continue this series by looking at more concrete examples of decomposition to
+  attack software architecture and software complexity. What is Software Comp
+categories:
+  - Technical Excellence & Engineering
+featuredImage: '/images/blog/fractal-1120769_1280.jpg'
+---
+
+![Fractal pattern representing software complexity and decomposition](/images/blog/fractal-1120769_1280-1024x768.jpg)
+
+Our first post in a series on decomposition introduced the [importance of breaking things down throughout the process of delivering software](insights/blog/why-decomposition-matters). Let's continue this series by looking at more concrete examples of decomposition to attack software architecture and software complexity.
+
+## What is Software Complexity?
+
+[Herbert Simon](http://en.wikipedia.org/wiki/Herbert_Simon) once said, "Complexity comes from a large number of parts that interact in a non-simple way." Architectural Complexity often seems subjective because who defines what is simple? Many people working on software projects get a sense that there are too
+
+many different components interacting in overly complex or differing ways. The number of parts and interactions are certainly a factor, but some problems have some inherent complexity that is necessary. The question should be, "Can it be simpler"?
+
+When looking at code, there are often more automated ways to gauge complexity. Metrics such as [Cyclomatic Complexity](http://en.wikipedia.org/wiki/Cyclomatic_complexity) help highlight the relative scores of individual methods to factor in the number of branches or paths and exit points through the code. A high complexity score often correlates with a larger source of errors, unexpected errors, and risks.
+
+## An Ounce of Prevention
+
+The best way to avoid complexity is to keep it simple in the first place. Some common techniques are:
+
+- Break down seemingly complex user stories along a complexity boundary. The part of the story that would introduce the most complex implementation problems may be the part that can be delayed and the team can learn from the simpler story implementation.
+
+- When implementing, decompose your implementation options into a set of options and [pick the simplest thing that could possibly work (DTSTTCPW)](http://c2.com/xp/DoTheSimplestThingThatCouldPossiblyWork.html). This often misunderstood technique encourages choosing the simplest of options. If an Array works over creating a more complex custom data structure, use it now and focus on learning about the core problem. Will an 'on the fly' assumption about really needing the more complex option really get validated right now anyway?
+
+- Apply the [YAGNI (You Aren't Going to Need It) principle](http://en.wikipedia.org/wiki/You_aren't_gonna_need_it). Similar to DTSTTCPW above, the goal is to eliminate unnecessary work that won't be validated and might never be needed. When designing or tasking out a User Story, break out each task as a small slice of validatable feature work and throw out those that you can't measure or match back to the acceptance criteria.
+
+## And A Little Cure
+
+Of course, we often find complexity is what is already implemented, such as the Class, module, component, or application that appears to do too much, is too difficult to understand, and is difficult to test or reuse. Decomposition helps here too:
+
+- Decompose large modules, methods, etc. into smaller, easier to follow versions that are easier to understand, reuse, and test. Use refactorings like [Extract Method](http://www.refactoring.com/catalog/extractMethod.html) and [Extract Class](http://www.refactoring.com/catalog/extractClass.html).
+
+- Find modules, classes, methods, etc. that seem to do more than one clear thing and break it apart to produce modules that follow the [Single Responsibility Principle](http://en.wikipedia.org/wiki/Single_responsibility_principle)
+
+## Conclusion
+
+With architecture and code complexity, decomposition is a helpful tool to defer or remove work that would add unnecessary complexity. It is also a useful tool to simplify what is already implemented. This is just another application of a useful skill that is valuable in Agile and software development in general.
