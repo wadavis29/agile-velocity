@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { getPostBySlug, getAllPostSlugs, getRelatedPosts, extractHeadings } from '@/lib/blog'
 import BlogTableOfContents, { BlogTableOfContentsMobile } from '@/components/BlogTableOfContents'
+import { ArticleSchema } from '@/components/seo/JsonLd'
 
 // Generate static paths for all blog posts
 export async function generateStaticParams() {
@@ -125,6 +126,17 @@ export default function BlogPostPage({ params }) {
 
   return (
     <>
+      {/* Article Schema for SEO */}
+      <ArticleSchema
+        title={post.title}
+        description={post.excerpt || `Read ${post.title} on the Agile Velocity blog.`}
+        image={post.featuredImage || 'https://www.agilevelocity.com/images/og/blog-og.png'}
+        datePublished={post.date}
+        dateModified={post.modifiedDate || post.date}
+        author={post.author || 'Agile Velocity'}
+        url={`https://www.agilevelocity.com/blog/${params.slug}`}
+      />
+
       {/* Article Header */}
       <article className="blog-post">
         <header className="blog-post-header">

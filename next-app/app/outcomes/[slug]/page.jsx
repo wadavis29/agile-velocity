@@ -77,7 +77,7 @@ export default async function OutcomeDetail({ params }) {
               <span className="outcome-divider">/</span>
               <span className="outcome-total">09</span>
               <span className="outcome-hero-icon">
-                <img src={outcome.iconPath} alt="" className="outcome-svg-img" />
+                <img src={outcome.iconPath} alt={`${outcome.title} icon`} className="outcome-svg-img" />
               </span>
               <span className="outcome-p2a-name">{outcome.p2aOutcome}</span>
             </div>
@@ -289,7 +289,7 @@ export default async function OutcomeDetail({ params }) {
             {relatedOutcomes.map(related => (
               <Link key={related.id} href={`/outcomes/${related.slug}`} className="outcome-card">
                 <div className="outcome-card-icon">
-                  <img src={related.iconPath} alt="" className="outcome-svg-img" />
+                  <img src={related.iconPath} alt={`${related.title} icon`} className="outcome-svg-img" />
                 </div>
                 <h3>{related.title}</h3>
                 <p>{related.description}</p>
