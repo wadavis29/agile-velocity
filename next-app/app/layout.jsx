@@ -1,9 +1,12 @@
 import { Inter, Bebas_Neue } from 'next/font/google'
+import Script from 'next/script'
 import TopBar from '@/components/layout/TopBar'
 import Nav from '@/components/layout/Nav'
 import Footer from '@/components/layout/Footer'
 import { OrganizationSchema, WebSiteSchema } from '@/components/seo/JsonLd'
 import './globals.css'
+
+const GA_MEASUREMENT_ID = 'G-76VDC77N5V'
 
 // Optimized font loading with next/font
 const inter = Inter({
@@ -21,7 +24,7 @@ const bebasNeue = Bebas_Neue({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://agilevelocity.com'),
+  metadataBase: new URL('https://www.agilevelocity.com'),
   title: {
     default: 'Agile Velocity | We Restart Stalled Transformations',
     template: '%s | Agile Velocity',
@@ -33,7 +36,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://agilevelocity.com',
+    url: 'https://www.agilevelocity.com',
     siteName: 'Agile Velocity',
     title: 'Agile Velocity | We Restart Stalled Transformations',
     description: 'Path to Agility framework guides your transformation from chaos to predictable delivery.',
@@ -65,6 +68,19 @@ export default function RootLayout({ children }) {
         <WebSiteSchema />
       </head>
       <body className={inter.className}>
+        {/* Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
         <TopBar />
         <Nav />
         <main>{children}</main>

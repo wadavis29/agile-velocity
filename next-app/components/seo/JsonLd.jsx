@@ -6,8 +6,8 @@ export function OrganizationSchema() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Agile Velocity',
-    url: 'https://agilevelocity.com',
-    logo: 'https://agilevelocity.com/opengraph-image',
+    url: 'https://www.agilevelocity.com',
+    logo: 'https://www.agilevelocity.com/opengraph-image',
     description: 'Path to Agility framework guides your transformation from chaos to predictable delivery. 15+ years helping Fortune 500 companies achieve speed, quality, and predictability.',
     foundingDate: '2010',
     address: {
@@ -23,7 +23,7 @@ export function OrganizationSchema() {
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer service',
-      url: 'https://agilevelocity.com/contact',
+      url: 'https://www.agilevelocity.com/contact',
     },
     knowsAbout: [
       'Agile Transformation',
@@ -48,7 +48,7 @@ export function WebSiteSchema() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Agile Velocity',
-    url: 'https://agilevelocity.com',
+    url: 'https://www.agilevelocity.com',
     description: 'Path to Agility framework guides your transformation from chaos to predictable delivery.',
     publisher: {
       '@type': 'Organization',
@@ -94,7 +94,7 @@ export function ServiceSchema({ name, description, provider = 'Agile Velocity' }
     provider: {
       '@type': 'Organization',
       name: provider,
-      url: 'https://agilevelocity.com',
+      url: 'https://www.agilevelocity.com',
     },
     areaServed: {
       '@type': 'Country',

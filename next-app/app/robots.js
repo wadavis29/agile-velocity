@@ -5,6 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: ['/api/', '/_next/'],
     },
-    sitemap: 'https://agilevelocity.com/sitemap.xml',
+    sitemap: 'https://www.agilevelocity.com/sitemap.xml',
   }
 }

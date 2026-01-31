@@ -3,7 +3,7 @@ import { problems } from '@/data/problems'
 import { getAllPosts } from '@/lib/blog'
 
 export default function sitemap() {
-  const baseUrl = 'https://agilevelocity.com'
+  const baseUrl = 'https://www.agilevelocity.com'
 
   // Static pages
   const staticPages = [
