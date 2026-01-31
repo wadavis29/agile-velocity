@@ -766,12 +766,24 @@ img {
 .mobile-menu .mobile-cta {
     margin-top: 1rem;
     padding: 1.125rem 2rem;
-    background: var(--color-orange);
-    color: var(--color-dark);
+    background: linear-gradient(135deg, var(--color-orange) 0%, #ff6b35 100%);
+    color: var(--color-dark) !important;
     font-family: var(--font-body);
-    font-size: 1.125rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
     border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.mobile-menu .mobile-cta i {
+    font-size: 0.75rem;
 }
 
 .mobile-menu .mobile-login {
@@ -781,12 +793,20 @@ img {
     border-radius: 6px;
     font-family: var(--font-body);
     font-size: 1rem;
-    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.9) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    text-align: center;
 }
 
 .mobile-menu .mobile-login i {
-    font-size: 0.875rem;
-    margin-left: 0.5rem;
+    font-size: 0.75rem;
 }
 
 /* Mobile Menu Close Button */
@@ -932,7 +952,7 @@ img {
 .mobile-cta-group {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 1rem;
     margin-top: 1.5rem;
     padding-top: 1rem;
@@ -942,13 +962,6 @@ img {
 .mobile-cta-group .mobile-login {
     width: 100%;
     text-align: center;
-}
-
-@media (min-width: 481px) {
-    .mobile-cta-group .mobile-cta,
-    .mobile-cta-group .mobile-login {
-        width: auto;
-    }
 }
 
 /* Mobile Menu Responsive Scaling */
@@ -996,8 +1009,13 @@ img {
     }
 
     .mobile-menu .mobile-cta {
-        font-size: 1.25rem;
+        font-size: 1.125rem;
         padding: 1.25rem 2.5rem;
+    }
+
+    .mobile-menu .mobile-login {
+        font-size: 1.125rem;
+        padding: 1.125rem 2.5rem;
     }
 
     .mobile-menu-close {

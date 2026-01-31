@@ -187,6 +187,9 @@ export default function Nav() {
               <Link href="/path-to-agility" onClick={closeMobile} className="mobile-sub-link">About Path to Agility®</Link>
               <Link href="/path-to-agility/navigator" onClick={closeMobile} className="mobile-sub-link">Navigator Software</Link>
               <Link href="/path-to-agility/partner" onClick={closeMobile} className="mobile-sub-link">Become a Partner</Link>
+              <Link href="/request-a-trial" onClick={closeMobile} className="mobile-view-all">
+                Request a Trial <i className="fas fa-arrow-right"></i>
+              </Link>
             </div>
           </div>
 
@@ -203,12 +206,27 @@ export default function Nav() {
             </div>
           </div>
 
+          {/* Insights Section */}
+          <div className={`mobile-accordion ${expandedSection === 'insights' ? 'expanded' : ''}`}>
+            <button className="mobile-accordion-header" onClick={() => toggleSection('insights')}>
+              Insights <i className={`fas fa-chevron-${expandedSection === 'insights' ? 'up' : 'down'}`}></i>
+            </button>
+            <div className="mobile-accordion-content">
+              <Link href="/insights/case-studies" onClick={closeMobile} className="mobile-sub-link">Case Studies</Link>
+              <Link href="/insights/white-papers" onClick={closeMobile} className="mobile-sub-link">White Papers</Link>
+              <Link href="/insights/webinars" onClick={closeMobile} className="mobile-sub-link">Webinars</Link>
+              <Link href="/blog" onClick={closeMobile} className="mobile-sub-link">Blog</Link>
+            </div>
+          </div>
+
           {/* Simple Links */}
           <Link href="/about" onClick={closeMobile} className="mobile-simple-link">About</Link>
 
           {/* CTAs */}
           <div className="mobile-cta-group">
-            <Link href="/contact" className="mobile-cta" onClick={closeMobile}>Book a Call</Link>
+            <Link href="/contact" className="mobile-cta" onClick={closeMobile}>
+              Book a Call <i className="fas fa-arrow-right"></i>
+            </Link>
             <a href="https://p2anav.com" className="mobile-login" target="_blank" rel="noopener noreferrer">
               Navigator Login <i className="fas fa-arrow-up-right-from-square"></i>
             </a>
