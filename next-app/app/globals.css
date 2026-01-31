@@ -24870,3 +24870,252 @@ p .blog-content-code {
         justify-content: center;
     }
 }
+
+/* ===================================
+   COOKIEYES COOKIE CONSENT BANNER
+   Custom styling to match Agile Velocity brand
+   =================================== */
+
+/* Main banner container */
+.cky-consent-container {
+    font-family: var(--font-body) !important;
+    background: var(--color-deep) !important;
+    border-top: 1px solid var(--color-border) !important;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Banner box/card */
+.cky-consent-bar {
+    background: var(--color-card) !important;
+    border: 1px solid var(--color-border) !important;
+    border-radius: 12px !important;
+    padding: 1.5rem !important;
+}
+
+/* Title text */
+.cky-title {
+    font-family: var(--font-body) !important;
+    font-weight: 700 !important;
+    color: var(--color-text) !important;
+    font-size: 1.1rem !important;
+}
+
+/* Description text */
+.cky-notice-des,
+.cky-consent-bar .cky-notice-des {
+    font-family: var(--font-body) !important;
+    color: var(--color-muted) !important;
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+}
+
+/* Links in banner */
+.cky-consent-container a,
+.cky-policy-link {
+    color: var(--color-gold) !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+}
+
+.cky-consent-container a:hover,
+.cky-policy-link:hover {
+    color: var(--color-orange) !important;
+    text-decoration: underline !important;
+}
+
+/* All buttons base style */
+.cky-btn {
+    font-family: var(--font-body) !important;
+    font-weight: 600 !important;
+    font-size: 0.875rem !important;
+    padding: 0.75rem 1.5rem !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    border: 2px solid transparent !important;
+}
+
+/* Accept button - Primary gold style */
+.cky-btn-accept {
+    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-orange) 100%) !important;
+    color: #000 !important;
+    border-color: transparent !important;
+}
+
+.cky-btn-accept:hover {
+    background: linear-gradient(135deg, var(--color-orange) 0%, var(--color-gold) 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 20px rgba(255, 190, 98, 0.3) !important;
+}
+
+/* Reject button - Ghost style */
+.cky-btn-reject {
+    background: transparent !important;
+    color: var(--color-muted) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.cky-btn-reject:hover {
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: var(--color-text) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Customize/Settings button - Outline gold style */
+.cky-btn-customize,
+.cky-btn-preferences {
+    background: transparent !important;
+    color: var(--color-gold) !important;
+    border-color: var(--color-gold) !important;
+}
+
+.cky-btn-customize:hover,
+.cky-btn-preferences:hover {
+    background: rgba(255, 190, 98, 0.1) !important;
+    color: var(--color-orange) !important;
+    border-color: var(--color-orange) !important;
+}
+
+/* Preference center / Modal */
+.cky-preference-center,
+.cky-modal {
+    background: var(--color-card) !important;
+    border: 1px solid var(--color-border) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Modal overlay */
+.cky-overlay {
+    background: rgba(10, 15, 26, 0.9) !important;
+    backdrop-filter: blur(4px) !important;
+}
+
+/* Modal header */
+.cky-preference-header,
+.cky-modal-header {
+    background: var(--color-deep) !important;
+    border-bottom: 1px solid var(--color-border) !important;
+    padding: 1.25rem 1.5rem !important;
+}
+
+/* Modal title */
+.cky-preference-title,
+.cky-modal-title {
+    font-family: var(--font-body) !important;
+    font-weight: 700 !important;
+    color: var(--color-text) !important;
+}
+
+/* Category headers */
+.cky-accordion-btn,
+.cky-preference-category {
+    background: var(--color-card-alt) !important;
+    border: 1px solid var(--color-border) !important;
+    border-radius: 8px !important;
+    color: var(--color-text) !important;
+    font-weight: 600 !important;
+}
+
+.cky-accordion-btn:hover {
+    background: rgba(255, 190, 98, 0.05) !important;
+}
+
+/* Toggle switches */
+.cky-switch input:checked + .cky-slider {
+    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-orange) 100%) !important;
+}
+
+.cky-slider {
+    background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.cky-slider:before {
+    background: var(--color-text) !important;
+}
+
+/* Category descriptions */
+.cky-accordion-body,
+.cky-preference-content-wrapper {
+    background: var(--color-deep) !important;
+    color: var(--color-muted) !important;
+    border-top: 1px solid var(--color-border) !important;
+}
+
+/* Cookie list items */
+.cky-cookie-des-table {
+    background: var(--color-card) !important;
+    border: 1px solid var(--color-border) !important;
+    border-radius: 8px !important;
+}
+
+.cky-cookie-des-table td {
+    color: var(--color-muted) !important;
+    border-color: var(--color-border) !important;
+}
+
+/* Close button */
+.cky-btn-close {
+    color: var(--color-muted) !important;
+    transition: color 0.2s ease !important;
+}
+
+.cky-btn-close:hover {
+    color: var(--color-text) !important;
+}
+
+/* Footer buttons in modal */
+.cky-preference-footer,
+.cky-modal-footer {
+    background: var(--color-deep) !important;
+    border-top: 1px solid var(--color-border) !important;
+    padding: 1rem 1.5rem !important;
+}
+
+/* Revisit consent button (floating) */
+.cky-revisit-bottom-left,
+.cky-revisit-bottom-right {
+    background: var(--color-card) !important;
+    border: 1px solid var(--color-border) !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+.cky-revisit-bottom-left:hover,
+.cky-revisit-bottom-right:hover {
+    background: var(--color-card-alt) !important;
+    border-color: var(--color-gold) !important;
+}
+
+/* Hide powered by branding (if desired) */
+/* Uncomment the following to hide CookieYes branding */
+/*
+div[data-cky-tag="powered-by"],
+div[data-cky-tag="detail-powered-by"] {
+    display: none !important;
+}
+*/
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .cky-consent-bar {
+        padding: 1rem !important;
+        margin: 0.5rem !important;
+        border-radius: 10px !important;
+    }
+
+    .cky-btn {
+        padding: 0.625rem 1rem !important;
+        font-size: 0.8rem !important;
+    }
+
+    .cky-notice-des {
+        font-size: 0.85rem !important;
+    }
+
+    .cky-preference-center,
+    .cky-modal {
+        margin: 1rem !important;
+        border-radius: 12px !important;
+    }
+}
