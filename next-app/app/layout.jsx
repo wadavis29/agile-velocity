@@ -137,11 +137,11 @@ export default function RootLayout({ children }) {
         <Script
           id="hs-script-loader"
           src={`//js.hs-scripts.com/${HUBSPOT_ID}.js`}
-          strategy="lazyOnload"
+          strategy="afterInteractive"
         />
 
         {/* HubSpot Chat Tracking → GA4 */}
-        <Script id="hubspot-tracking" strategy="lazyOnload">
+        <Script id="hubspot-tracking" strategy="afterInteractive">
           {`
             function setupHubSpotTracking() {
               window.HubSpotConversations.on('contactAssociated', function(payload) {
