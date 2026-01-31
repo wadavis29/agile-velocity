@@ -24749,3 +24749,124 @@ p .blog-content-code {
         padding: 0.6rem 0.75rem;
     }
 }
+
+
+/* ===================================
+   404 NOT FOUND PAGE
+   =================================== */
+
+.not-found-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    padding-top: calc(80px + 36px + 2rem);
+    background: var(--color-dark);
+}
+
+.not-found-content {
+    text-align: center;
+    max-width: 600px;
+}
+
+.not-found-code {
+    display: block;
+    font-family: var(--font-display);
+    font-size: clamp(8rem, 25vw, 14rem);
+    line-height: 1;
+    background: linear-gradient(135deg, var(--color-gold), var(--color-orange));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.not-found-content h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.not-found-content p {
+    font-size: 1.1rem;
+    color: var(--color-muted);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+.not-found-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.not-found-actions .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: var(--color-muted);
+    transition: all 0.3s var(--ease-out);
+}
+
+.not-found-actions .btn-ghost:hover {
+    border-color: var(--color-gold);
+    color: var(--color-gold);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .not-found-code {
+        font-size: 10rem;
+    }
+
+    .not-found-content h1 {
+        font-size: 2.25rem;
+    }
+
+    .not-found-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .not-found-page {
+        padding: 1.5rem;
+        padding-top: calc(70px + 36px + 1.5rem);
+    }
+
+    .not-found-code {
+        font-size: 6rem;
+    }
+
+    .not-found-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .not-found-content p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .not-found-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .not-found-actions .btn-primary,
+    .not-found-actions .btn-ghost {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+}
