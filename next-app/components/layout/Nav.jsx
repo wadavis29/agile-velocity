@@ -209,7 +209,7 @@ export default function Nav() {
           {/* CTAs */}
           <div className="mobile-cta-group">
             <Link href="/contact" className="mobile-cta" onClick={closeMobile}>Book a Call</Link>
-            <a href="https://navigator.pathtoagility.com/" className="mobile-login" target="_blank" rel="noopener noreferrer">
+            <a href="https://p2anav.com" className="mobile-login" target="_blank" rel="noopener noreferrer">
               Navigator Login <i className="fas fa-arrow-up-right-from-square"></i>
             </a>
           </div>

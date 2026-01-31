@@ -21,7 +21,7 @@ export default function TopBar() {
             </div>
           </div>
           <Link href="/about">About</Link>
-          <a href="https://navigator.pathtoagility.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://p2anav.com" target="_blank" rel="noopener noreferrer">
             Navigator Login <i className="fas fa-arrow-up-right-from-square"></i>
           </a>
         </div>
