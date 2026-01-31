@@ -1,0 +1,21 @@
+{
+  "name": "Agile Velocity",
+  "short_name": "Agile Velocity",
+  "description": "Path to Agility framework guides your transformation from chaos to predictable delivery.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F1419",
+  "theme_color": "#FFBE62",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

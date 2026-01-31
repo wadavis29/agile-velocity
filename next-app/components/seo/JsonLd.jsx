@@ -7,7 +7,7 @@ export function OrganizationSchema() {
     '@type': 'Organization',
     name: 'Agile Velocity',
     url: 'https://agilevelocity.com',
-    logo: 'https://agilevelocity.com/og-image.png',
+    logo: 'https://agilevelocity.com/opengraph-image',
     description: 'Path to Agility framework guides your transformation from chaos to predictable delivery. 15+ years helping Fortune 500 companies achieve speed, quality, and predictability.',
     foundingDate: '2010',
     address: {

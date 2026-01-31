@@ -37,29 +37,21 @@ export const metadata = {
     siteName: 'Agile Velocity',
     title: 'Agile Velocity | We Restart Stalled Transformations',
     description: 'Path to Agility framework guides your transformation from chaos to predictable delivery.',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Agile Velocity - Path to Agility',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Agile Velocity | We Restart Stalled Transformations',
     description: 'Path to Agility framework guides your transformation from chaos to predictable delivery.',
-    images: ['/og-image.png'],
   },
-  // TEMPORARY: Block indexing for client review
-  // TODO: Change back to index: true before going live
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
     },
   },
 }

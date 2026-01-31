@@ -32,7 +32,7 @@ export default function Nav() {
         <div className="nav-inner">
           <Link href="/" className="logo">
             <Image
-              src="/images/agile-velocity-logo.svg"
+              src="/images/agile-velocity-logo-white.svg"
               alt="Agile Velocity"
               width={180}
               height={40}
