@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
         <div className="legal-hero-inner">
           <span className="section-tag">Legal</span>
           <h1 className="legal-hero-title">Privacy Policy</h1>
-          <p className="legal-hero-date">Effective Date: December 26, 2023</p>
+          <p className="legal-hero-date">Effective Date: January 30, 2026</p>
         </div>
       </section>
 
@@ -118,7 +118,10 @@ export default function PrivacyPolicy() {
 
             <h2>US Website Usage Monitoring Consent</h2>
             <p>
-              Website usage is subject to monitoring by Agile Velocity and service providers. Beyond traditional analytics, the company may monitor usage through precise mouse movement tracking and session replay code insertion. Service providers may make or receive chat and service ticket transcripts. Facebook pixels or other advertising/marketing/social media company technology may be utilized to facilitate advertising, marketing, or services.
+              Website usage is subject to monitoring by Agile Velocity and service providers. Beyond traditional analytics, the company may monitor usage through precise mouse movement tracking and session replay code insertion. Service providers may make or receive chat and service ticket transcripts. Advertising, marketing, or social media company technology may be utilized to facilitate advertising, marketing, or services.
+            </p>
+            <p>
+              We use ClickCease, an ad fraud detection service, to protect our advertising campaigns from invalid clicks and fraudulent activity. ClickCease may collect your IP address, device information, browser type, and click behavior to identify and prevent ad fraud. For more information, visit <a href="https://www.clickcease.com/privacy-policy/" target="_blank" rel="noopener noreferrer">ClickCease Privacy Policy</a>.
             </p>
             <p>
               Session data may be shared with third parties; service providers may collect session or communication aspects without express notification or opt-in consent.
@@ -247,6 +250,9 @@ export default function PrivacyPolicy() {
             <h2>Cookies and Other Tracking Technologies</h2>
             <p>
               &quot;Cookies&quot; are small browser-stored information pieces on computer hard drives. Agile Velocity uses cookies for session tracking and other functions and may use cookies for interest-specific content delivery.
+            </p>
+            <p>
+              We use CookieYes, a cookie consent management platform, to collect and manage your cookie preferences. CookieYes stores your consent choices and helps us comply with privacy regulations including GDPR and CCPA. CookieYes may process your IP address and consent preferences. For more information, visit <a href="https://www.cookieyes.com/privacy-policy/" target="_blank" rel="noopener noreferrer">CookieYes Privacy Policy</a>.
             </p>
             <p>
               The company uses standard Internet technology, including web beacons and similar technologies, to track Sites, services and software usage. Promotional emails and newsletters may include web beacons to determine opening and action rates. This information enables service customization for users, targeted advertisement delivery, and overall online advertising, content, programming, or activity effectiveness measurement.
