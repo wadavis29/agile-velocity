@@ -192,6 +192,17 @@ const redirects = [
     destination: '/',
     permanent: true,
   },
+  // IMPORTANT: Specific paths must come BEFORE the wildcard to be matched first
+  {
+    source: '/coaching/path-to-agility',
+    destination: '/path-to-agility',
+    permanent: true,
+  },
+  {
+    source: '/coaching/path-to-agility/',
+    destination: '/path-to-agility',
+    permanent: true,
+  },
   {
     source: '/coaching/:path*',
     destination: '/',
@@ -428,11 +439,8 @@ const redirects = [
     destination: '/training',
     permanent: true,
   },
-  {
-    source: '/training/:slug*',
-    destination: '/training',
-    permanent: true,
-  },
+  // NOTE: Removed '/training/:slug*' redirect - it was causing redirect loops
+  // because the new site has real pages at /training/courses, /training/for-organizations, etc.
   {
     source: '/scrum-training/:path*',
     destination: '/training',
@@ -473,16 +481,7 @@ const redirects = [
     destination: '/path-to-agility',
     permanent: true,
   },
-  {
-    source: '/coaching/path-to-agility',
-    destination: '/path-to-agility',
-    permanent: true,
-  },
-  {
-    source: '/coaching/path-to-agility/',
-    destination: '/path-to-agility',
-    permanent: true,
-  },
+  // NOTE: /coaching/path-to-agility redirects moved earlier in file (before wildcard)
   {
     source: '/transformation/path-to-agility',
     destination: '/path-to-agility',
