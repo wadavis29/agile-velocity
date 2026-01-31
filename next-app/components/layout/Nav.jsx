@@ -32,7 +32,7 @@ export default function Nav() {
         <div className="nav-inner">
           <Link href="/" className="logo">
             <Image
-              src="https://agilevelocity.com/wp-content/uploads/2025/12/sunrise-landscape-2023.svg"
+              src="/images/agile-velocity-logo.svg"
               alt="Agile Velocity"
               width={180}
               height={40}

@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="footer-top">
         <div className="footer-brand">
           <Image
-            src="https://agilevelocity.com/wp-content/uploads/2025/12/sunrise-landscape-2023.svg"
+            src="/images/agile-velocity-logo.svg"
             alt="Agile Velocity"
             className="footer-logo"
             width={200}
