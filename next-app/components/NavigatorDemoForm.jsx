@@ -70,9 +70,10 @@ export default function NavigatorDemoForm() {
             const urlParams = new URLSearchParams(window.location.search)
             const planParam = urlParams.get('plan')
             if (typeof gtag !== 'undefined') {
-              gtag('event', 'demo_request', {
+              gtag('event', 'gt_form', {
                 'event_category': 'conversion',
                 'event_label': 'Navigator Page Form',
+                'form_type': 'demo_request',
                 'source': 'navigator_page',
                 'plan_interest': planParam || 'none'
               })

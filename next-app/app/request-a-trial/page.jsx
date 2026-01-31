@@ -85,9 +85,10 @@ export default function RequestATrial() {
             const urlParams = new URLSearchParams(window.location.search)
             const planParam = urlParams.get('plan')
             if (typeof gtag !== 'undefined') {
-              gtag('event', 'demo_request', {
+              gtag('event', 'gt_form', {
                 'event_category': 'conversion',
                 'event_label': 'Demo Request Form',
+                'form_type': 'demo_request',
                 'plan_interest': planParam || 'none'
               })
             }

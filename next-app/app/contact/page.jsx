@@ -61,7 +61,8 @@ export default function Contact() {
             if (typeof gtag !== 'undefined') {
               gtag('event', 'gt_form', {
                 'event_category': 'conversion',
-                'event_label': 'Contact Form'
+                'event_label': 'Contact Form',
+                'form_type': 'contact'
               })
             }
           }
@@ -101,7 +102,7 @@ export default function Contact() {
                 </div>
                 <div className="contact-method-info">
                   <h3>Call Us</h3>
-                  <a href="tel:+15122197870">+1 (512) 219-7870</a>
+                  <a href="tel:512-298-2835">512-298-2835</a>
                 </div>
               </div>
 
