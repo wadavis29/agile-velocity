@@ -97,12 +97,13 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
         />
 
-        {/* Google Analytics (GA4) + Google Ads */}
+        {/* Google Analytics (GA4) + Google Ads - Blocked until analytics consent */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"
+          data-cookieyes="cookieyes-analytics"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="afterInteractive" data-cookieyes="cookieyes-analytics">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -112,8 +113,8 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        {/* RB2B Visitor Identification */}
-        <Script id="rb2b" strategy="afterInteractive">
+        {/* RB2B Visitor Identification - Blocked until advertisement consent */}
+        <Script id="rb2b" strategy="afterInteractive" data-cookieyes="cookieyes-advertisement">
           {`
             !function(key) {
               if (window.reb2b) return;
@@ -126,8 +127,8 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        {/* ClickCease Ad Fraud Protection */}
-        <Script id="clickcease" strategy="afterInteractive">
+        {/* ClickCease Ad Fraud Protection - Blocked until functional consent */}
+        <Script id="clickcease" strategy="afterInteractive" data-cookieyes="cookieyes-functional">
           {`
             var script = document.createElement('script');
             script.async = true;
@@ -142,15 +143,16 @@ export default function RootLayout({ children }) {
           </a>
         </noscript>
 
-        {/* HubSpot Chat Widget */}
+        {/* HubSpot Chat Widget - Blocked until functional consent */}
         <Script
           id="hs-script-loader"
           src={`https://js-na2.hs-scripts.com/${HUBSPOT_ID}.js`}
           strategy="afterInteractive"
+          data-cookieyes="cookieyes-functional"
         />
 
-        {/* HubSpot Chat Tracking → GA4 */}
-        <Script id="hubspot-tracking" strategy="afterInteractive">
+        {/* HubSpot Chat Tracking → GA4 - Blocked until functional consent */}
+        <Script id="hubspot-tracking" strategy="afterInteractive" data-cookieyes="cookieyes-functional">
           {`
             function setupHubSpotTracking() {
               window.HubSpotConversations.on('contactAssociated', function(payload) {
