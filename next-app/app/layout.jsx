@@ -136,7 +136,7 @@ export default function RootLayout({ children }) {
         {/* HubSpot Chat Widget */}
         <Script
           id="hs-script-loader"
-          src={`https://js.hs-scripts.com/${HUBSPOT_ID}.js`}
+          src={`https://js-na2.hs-scripts.com/${HUBSPOT_ID}.js`}
           strategy="afterInteractive"
         />
 
