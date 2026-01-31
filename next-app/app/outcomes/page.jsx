@@ -7,20 +7,6 @@ export const metadata = {
   openGraph: {
     title: 'Business Outcomes | Agile Velocity',
     description: 'We don\'t sell processes. We deliver results. These are the 9 business outcomes every transformation should produce.',
-    images: [
-      {
-        url: 'https://www.agilevelocity.com/images/og/outcomes-og.png',
-        width: 1200,
-        height: 630,
-        alt: '9 Business Outcomes',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Business Outcomes | Agile Velocity',
-    description: 'The 9 business outcomes every transformation should produce.',
-    images: ['https://www.agilevelocity.com/images/og/outcomes-og.png'],
   },
 }
 

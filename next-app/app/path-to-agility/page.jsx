@@ -7,20 +7,6 @@ export const metadata = {
   openGraph: {
     title: 'Path to Agility Framework | Agile Velocity',
     description: 'Outcome-driven improvement framework. Start with business results, work backward to practices.',
-    images: [
-      {
-        url: 'https://www.agilevelocity.com/images/og/path-to-agility-og.png',
-        width: 1200,
-        height: 630,
-        alt: 'Path to Agility Framework',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Path to Agility Framework | Agile Velocity',
-    description: 'Outcome-driven improvement framework. Start with business results, work backward to practices.',
-    images: ['https://www.agilevelocity.com/images/og/path-to-agility-og.png'],
   },
 }
 

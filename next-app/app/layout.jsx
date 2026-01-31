@@ -47,20 +47,13 @@ export const metadata = {
     siteName: 'Agile Velocity',
     title: 'Agile Velocity | We Restart Stalled Transformations',
     description: 'Path to Agility framework guides your transformation from chaos to predictable delivery.',
-    images: [
-      {
-        url: 'https://www.agilevelocity.com/images/og/default-og.png',
-        width: 1200,
-        height: 630,
-        alt: 'Agile Velocity - We Restart Stalled Transformations',
-      },
-    ],
+    // Note: opengraph-image.jsx auto-generates the default OG image
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Agile Velocity | We Restart Stalled Transformations',
     description: 'Path to Agility framework guides your transformation from chaos to predictable delivery.',
-    images: ['https://www.agilevelocity.com/images/og/default-og.png'],
+    // Note: twitter-image.jsx auto-generates the default Twitter image
   },
   robots: {
     index: true,

@@ -291,7 +291,18 @@ Don't wait to be told. If you see:
 - Data: `/next-app/data/`
 - Images: `/next-app/public/images/` or `/images/`
 - Strategy docs: `/Strategy/`
-- Production URL: https://agilevelocity.vercel.app
+
+### URL Standards (NON-NEGOTIABLE)
+- **Production URL:** `https://www.agilevelocity.com`
+- **ALWAYS use `www.`** - Never use the bare domain `agilevelocity.com`
+- **NEVER reference the Vercel URL** (`agilevelocity.vercel.app`) - this is only for internal deployment
+- When creating or recommending any URL, ALWAYS use the full format: `https://www.agilevelocity.com/path`
+
+**Examples:**
+- ✅ `https://www.agilevelocity.com/contact`
+- ✅ `https://www.agilevelocity.com/request-a-trial/thank-you`
+- ❌ `https://agilevelocity.com/contact` (missing www)
+- ❌ `https://agilevelocity.vercel.app/contact` (wrong domain)
 
 ---
 

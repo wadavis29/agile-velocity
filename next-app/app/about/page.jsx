@@ -8,20 +8,6 @@ export const metadata = {
   openGraph: {
     title: 'About Us | Agile Velocity',
     description: 'Learn about Agile Velocity and our mission to deliver transformation that actually works.',
-    images: [
-      {
-        url: 'https://www.agilevelocity.com/images/og/about-og.png',
-        width: 1200,
-        height: 630,
-        alt: 'About Agile Velocity',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'About Us | Agile Velocity',
-    description: 'Learn about Agile Velocity and our mission to deliver transformation that actually works.',
-    images: ['https://www.agilevelocity.com/images/og/about-og.png'],
   },
 }
 
