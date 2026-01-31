@@ -83,6 +83,13 @@ export default function RootLayout({ children }) {
 
         {/* ========== THIRD-PARTY SCRIPTS ========== */}
 
+        {/* CookieYes Cookie Consent Banner */}
+        <Script
+          id="cookieyes"
+          src="https://cdn-cookieyes.com/client_data/685bd732c2edd8ab868f90c83fb7c108/script.js"
+          strategy="beforeInteractive"
+        />
+
         {/* FontAwesome Icons */}
         <Script
           src="https://kit.fontawesome.com/0c6553beb3.js"
